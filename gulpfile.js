@@ -12,7 +12,7 @@ var paths = {
     jsSource: ['./public/js/**/*.js'],
     sassSource: ['./public/styles/**/*.scss'],
     indexSource: ['./public/index.html'],
-    viewsSource: ['./public/views/**/*.html'],
+    viewsSource: ['./public/views/**/*.html']
     // querySource: ['./queries/**/*.sql']
 };
 
