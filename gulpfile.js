@@ -7,6 +7,7 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var cssmin = require('gulp-cssmin');
 var htmlmin = require('gulp-htmlmin');
+var watch = require('gulp-watch');
 
 var paths = {
     jsSource: ['./public/js/**/*.js'],
@@ -16,13 +17,20 @@ var paths = {
     // querySource: ['./queries/**/*.sql']
 };
 
-gulp.task('sass', function() {
-    return gulp.src(paths.sassSource)
-        .pipe(sass())
-        .pipe(concat('bundle.css'))
-        .pipe(cssmin())
-        .pipe(rename({extname: ".min.css"}))
-        .pipe(gulp.dest('./dist'));
+// gulp.task('sass', function() {
+//     return gulp.src(paths.sassSource)
+//         .pipe(sass())
+//         .pipe(concat('bundle.css'))
+//         .pipe(cssmin())
+//         .pipe(rename({extname: ".min.css"}))
+//         .pipe(gulp.dest('./dist'));
+// });
+
+gulp.task('sass', function () {
+ return gulp.src(paths.sassSource)
+   .pipe(sass())
+   .pipe(concat('bundle.css'))
+   .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('js', function() {
@@ -60,6 +68,5 @@ gulp.task('watch', function() {
     // gulp.watch(paths.querySource, ['queries']);
 });
 
-gulp.task('default', ['js', 'sass', 'index', 'views', /*'queries',*/
-    'watch'
+gulp.task('default', ['js', 'sass',     'watch', 'index', 'views', /*'queries',*/
 ]);

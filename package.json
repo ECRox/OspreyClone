@@ -2,7 +2,7 @@
   "name": "OspreyClone",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/index.js",
   "dependencies": {
     "body-parser": "^1.15.2",
     "cors": "^2.8.1",
@@ -16,6 +16,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11",
     "massive": "^2.5.0"
   },
   "devDependencies": {},
