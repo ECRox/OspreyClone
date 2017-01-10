@@ -1,12 +1,12 @@
 var gulp = require('gulp');
-// var concat = require('gulp-concat');
+var concat = require('gulp-concat');
 var sass = require('gulp-sass');
-// var annotate = require('gulp-ng-annotate');
-//
-// var uglify = require('gulp-uglify');
-// var rename = require('gulp-rename');
-// var cssmin = require('gulp-cssmin');
-// var htmlmin = require('gulp-htmlmin');
+var annotate = require('gulp-ng-annotate');
+
+var uglify = require('gulp-uglify');
+var rename = require('gulp-rename');
+var cssmin = require('gulp-cssmin');
+var htmlmin = require('gulp-htmlmin');
 
 var paths = {
     jsSource: ['./public/js/**/*.js'],
