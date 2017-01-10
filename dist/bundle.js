@@ -1,0 +1,1 @@
+angular.module("ospreypack",["ui.router"]).config(["$stateProvider","$urlRouterProvider",function(r,t){t.otherwise("/"),r.state("home",{templateUrl:"./views/home.html",controller:"homeCtrl",url:"/"}).state("product",{templateUrl:"./views/product.html",controller:"productCtrl",url:"/product/:id"})}]),angular.module("ospreypack").controller("homeCtrl",function(){});
