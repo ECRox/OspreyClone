@@ -1,7 +1,14 @@
+@import '../variables';
+
 * {
   box-sizing: border-box;
 }
 
 .top-section {
-  background: url(http://www.ospreypacks.com/images/heros/Mutant-small.jpg) no-repeat;
+  background-image: url(http://www.ospreypacks.com/images/heros/Mutant-small.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 10em;
+  height:100%;
 }
