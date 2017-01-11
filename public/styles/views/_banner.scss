@@ -1,0 +1,23 @@
+.banner {
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  .top {
+    width: 1200px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .top-text {
+    color: #fff;
+    font-family: $hn;
+    font-size: 30px;
+  }
+
+}
