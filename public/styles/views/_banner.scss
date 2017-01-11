@@ -2,16 +2,19 @@
   -webkit-font-smoothing: antialiased;
   position: relative;
   .top {
-    width: 1200px;
-    height: 40px;
-    background-color: blue;
+    @include dimensions(100vw, 40px)
+    @include flex(center, center);
+    background-color: #000;
     color: #fff;
     position: fixed;
-    right: 0;
-    left: 0;
     top: 0px;
-    margin-right: auto;
-    margin-left: auto;
+  }
+
+  .right {
+    @include dimensions(300px, 16px)
+    background: purple;
+    position: relative;
+    left: 447px;
   }
 
   .top-text {
