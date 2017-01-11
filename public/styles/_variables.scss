@@ -1,1 +1,10 @@
-$font-stack: HelveticaNeue,"Helvetica Neue",HelveticaNeueRoman,HelveticaNeue-Roman,"Helvetica Neue Roman",TeXGyreHerosRegular,Helvetica,Tahoma,Geneva,Arial,sans-serif;
+
+@font-face {
+  font-family: 'helvetica-neue';
+  src: url('./fonts/HelveticaNeue.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'helvetica-neue-bold';
+  src: url('./fonts/HelveticaNeue-Bold.woff') format('woff');
+}
