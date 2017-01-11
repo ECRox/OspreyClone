@@ -23,6 +23,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+html, body {
+  height: 100%; }
+
 body {
   line-height: 1; }
 
@@ -46,6 +49,14 @@ table {
 * {
   box-sizing: border-box; }
 
+body {
+  font: HelveticaNeue, "Helvetica Neue", HelveticaNeueRoman, HelveticaNeue-Roman, "Helvetica Neue Roman", TeXGyreHerosRegular, Helvetica, Tahoma, Geneva, Arial, sans-serif; }
+
 .top-section {
-  background: url(http://www.ospreypacks.com/images/heros/Mutant-small.jpg) no-repeat; }
+  background-image: url(http://www.ospreypacks.com/images/heros/Mutant-small.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 10em;
+  height: 100%; }
 
