@@ -7,6 +7,40 @@
     background-color: #000;
     position: fixed;
     top: 0px;
+    // z-index: 0;
+  }
+
+  .logo {
+    @include dimensions(186px, 144px);
+    background-image: url('http://www.ospreypacks.com/images/logos/osprey-white-oval-logo-withglow-DOUBLE-RES.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 350px;
+    top: -2px;
+  }
+
+  .flag {
+    @include dimensions(30px, 15px);
+    // @include flex(center, center);
+    background-image: url('http://icons.iconarchive.com/icons/icons-land/vista-flags/256/United-States-Flag-1-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // margin-top: 8px;
+    // margin-right: 40px;
+    position: relative;
+    left: 422px;
+  }
+
+  .caret {
+    @include dimensions(18px, 22px);
+    position: relative;
+    left: 35px;
+    bottom: 3px;
+    -webkit-filter: invert(1);
+    filter: invert(1);
   }
 
   .links-box {
@@ -44,28 +78,6 @@
     -webkit-transition: color .2s ease-in-out;
     transition: color .2s ease-in-out;
     color: #0095cf;
-}
-
-  .flag {
-    @include dimensions(30px, 15px);
-    // @include flex(center, center);
-    background-image: url('http://icons.iconarchive.com/icons/icons-land/vista-flags/256/United-States-Flag-1-icon.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    // margin-top: 8px;
-    // margin-right: 40px;
-    position: relative;
-    left: 422px;
-  }
-
-  .caret {
-    @include dimensions(18px, 22px);
-    position: relative;
-    left: 35px;
-    bottom: 3px;
-    -webkit-filter: invert(1);
-    filter: invert(1);
   }
 
 
