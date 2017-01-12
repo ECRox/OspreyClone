@@ -1,5 +1,3 @@
-// @import '../variables';
-
 * {
   box-sizing: border-box;
 }
@@ -20,21 +18,35 @@
   color: white;
   font-size: 1em;
   display: block;
-  width: 100%;
-  margin: .5em 0;
-  background: black;
+  width: 90%;
+  margin: .5em auto;
   border-radius: .3em;
-  border: .2em solid white;
   padding: .5em;
+}
+
+.small-button {
+  width: auto;
+}
+
+.transparent-background {
+  background-color: transparent;
+}
+
+.white-border-button {
+  border: .2em solid white;
 }
 
 .top-section {
   background-image: url(http://www.ospreypacks.com/images/heros/Mutant-small.jpg);
+  margin-top: 10em;
+}
+
+.img-position {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-top: 10em;
-  height:100%;
+  height: 100%;
+  width: 100%;
   position: relative;
 }
 
@@ -44,4 +56,104 @@
   border-top: white 1px solid;
   position: absolute;
   width: 100%;
+}
+
+h4 {
+  font-family: $hn;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 5px 5px;
+}
+
+h6 {
+  font-family: $hn;
+  font-size: 11px;
+  margin: 5px 5px;
+}
+
+.blue-border-button {
+  border: 1px solid #0095cf;
+  color: #0095cf;
+  border-radius: .3em;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.third-section {
+  background-image: url(http://www.ospreypacks.com/images/heros/Farpoint_JulyHomepage_small.jpg);
+}
+
+.red-button {
+  background-color: red;
+  border: none;
+}
+
+.image-section {
+  background-image: url(http://www.ospreypacks.com/images/article/atmos-aura-content-full-width.jpg);
+  background-repeat: repeat-x;
+  background-position: left top;
+  height: 500px;
+}
+
+.backpacker-bkgrnd {
+  background-image: url(http://www.ospreypacks.com/images/article/yellow-osprey-full-width-callout-bg-content-960x480.jpg);
+  background-repeat: repeat-x;
+  background-position: left top;
+  height: 500px;
+}
+
+.bottom-center {
+  position: relative;
+  top: 50%;
+}
+
+.center-align-text {
+  text-align: center;
+}
+
+.black-button {
+  background-color: black;
+  border: none;
+}
+
+.fifth-section {
+  background-image: url(http://www.ospreypacks.com/images/heros/Packfinder_2-mobile.jpg);
+}
+
+.image-section-1 {
+  background-color: #be4805;
+}
+
+.opaque-btn {
+  opacity: 2;
+}
+
+.image-section-2 {
+  background-image: url(http://www.ospreypacks.com/images/article/Dear-crop.jpg);
+}
+
+.seventh-section {
+  background-image: url(http://www.ospreypacks.com/images/heros/Variant-small-new.jpg);
+}
+
+.trending-title-text {
+  font-family: $hn;
+  text-align: center;
+}
+
+.ninth-section {
+  background-image: url(http://www.ospreypacks.com/images/heros/Kamber_1920x1080.jpg);
+}
+
+.tenth-section {
+  background-image: url(http://www.ospreypacks.com/images/heros/about-fixed-bg-1920x800.jpg);
+}
+
+.eleventh-section {
+  background-image: url(http://www.ospreypacks.com/images/heros/KamberABS_1920x1080.jpg);
+}
+
+.instagram-carousel {
+  margin-bottom: 15em;
+  background-color: #EAEAEA;
 }
