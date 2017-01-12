@@ -1,3 +1,15 @@
+// Think of variables as a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you'll want to reuse. Sass uses the $ symbol to make something a variable.
+
+@font-face {
+font-family: "FontAwesome";
+src: url("font-awesome/fonts/fontawesome-webfont.eot");
+src: url("font-awesome/fonts/fontawesome-webfont.eot") format("embedded-opentype"),
+url("font-awesome/fonts/fontawesome-webfont.woff") format("woff"),
+url("font-awesome/fonts/fontawesome-webfont.ttf") format("truetype"),
+url("font-awesome/fonts/fontawesome-webfont.svg") format("svg");
+font-weight: normal;
+font-style: normal;
+}
 
 @font-face {
   font-family: 'helvetica-neue';
