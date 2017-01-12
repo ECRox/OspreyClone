@@ -1,26 +1,104 @@
 .banner {
   -webkit-font-smoothing: antialiased;
   position: relative;
-  .top {
+  //==============================================================================//
+  //                          Black Nav                                      //
+  //==============================================================================//
+  .black-nav {
     @include dimensions(100vw, 40px)
     @include flex(center, center);
+    z-index: 9;
     background-color: #000;
-    color: #fff;
     position: fixed;
     top: 0px;
   }
 
-  .right {
-    @include dimensions(300px, 16px)
-    background: purple;
+  .logo {
+    @include dimensions(186px, 144px);
+    z-index: 10;
+    background-image: url('http://www.ospreypacks.com/images/logos/osprey-white-oval-logo-withglow-DOUBLE-RES.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: relative;
-    left: 447px;
+    right: 387px;
+    top: 50px;
   }
 
-  .top-text {
-    color: #fff;
+  .flag {
+    @include dimensions(30px, 15px);
+    // @include flex(center, center);
+    background-image: url('http://icons.iconarchive.com/icons/icons-land/vista-flags/256/United-States-Flag-1-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // margin-top: 8px;
+    // margin-right: 40px;
+    position: relative;
+    left: 333px;
+  }
+
+  .caret {
+    @include dimensions(18px, 22px);
+    position: relative;
+    left: 35px;
+    bottom: 3px;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+
+  .links-box {
+    // @include dimensions(300px, 16px)
+    @include flex(space-between, center);
+    flex-direction: row;
+    background: #000;
+    position: relative;
+    left: 368px;
+    // color: #fff;
     font-family: $hn;
     font-size: 14px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    padding: 8px 21px 8px 0px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    -webkit-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+    color: #0095cf;
+  }
+  //==============================================================================//
+  //                          White Nav                                      //
+  //==============================================================================//
+  .white-nav {
+    z-index: 8;
+    @include dimensions(100vw, 100px)
+    @include flex(center, center);
+    background-color: rgba(255,255,255,.85);
+    position: fixed;
+    top: 40px;
+    font-family: $hnb;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    display: block;
   }
 
 }
