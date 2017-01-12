@@ -1,24 +1,28 @@
 .banner {
   -webkit-font-smoothing: antialiased;
   position: relative;
+  //==============================================================================//
+  //                          Black Nav                                      //
+  //==============================================================================//
   .black-nav {
     @include dimensions(100vw, 40px)
     @include flex(center, center);
+    z-index: 9;
     background-color: #000;
     position: fixed;
     top: 0px;
-    // z-index: 0;
   }
 
   .logo {
     @include dimensions(186px, 144px);
+    z-index: 10;
     background-image: url('http://www.ospreypacks.com/images/logos/osprey-white-oval-logo-withglow-DOUBLE-RES.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: absolute;
-    left: 350px;
-    top: -2px;
+    position: relative;
+    right: 387px;
+    top: 50px;
   }
 
   .flag {
@@ -31,7 +35,7 @@
     // margin-top: 8px;
     // margin-right: 40px;
     position: relative;
-    left: 422px;
+    left: 333px;
   }
 
   .caret {
@@ -49,7 +53,7 @@
     flex-direction: row;
     background: #000;
     position: relative;
-    left: 478px;
+    left: 368px;
     // color: #fff;
     font-family: $hn;
     font-size: 14px;
@@ -79,6 +83,23 @@
     transition: color .2s ease-in-out;
     color: #0095cf;
   }
-
+  //==============================================================================//
+  //                          White Nav                                      //
+  //==============================================================================//
+  .white-nav {
+    z-index: 8;
+    @include dimensions(100vw, 100px)
+    @include flex(center, center);
+    // background-color: rgba(255,255,255,.85);
+    background-color: purple;
+    position: fixed;
+    top: 40px;
+    font-family: $hnb;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    display: block;
+  }
 
 }
