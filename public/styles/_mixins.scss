@@ -8,3 +8,10 @@
   width: $width;
   height: $height;
 }
+
+@mixin image($link) {
+  background-image: url($link);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
