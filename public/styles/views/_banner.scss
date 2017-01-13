@@ -5,14 +5,14 @@ body {
     position: relative;
   }
   //==============================================================================//
-  //                          Black Nav                                      //
+  //                          Black Nav Bar                                       //
   //==============================================================================//
   .black-nav {
     z-index: 9;
     @include dimensions(100vw, 40px)
     @include flex(center, center);
     background-color: #000;
-    position: fixed;
+    position: absolute;
     top: 0px;
   }
 
@@ -79,14 +79,14 @@ body {
     color: #0095cf;
   }
   //==============================================================================//
-  //                          White Nav                                      //
+  //                          White Nav Bar                                       //
   //==============================================================================//
   .white-nav {
     z-index: 8;
     @include dimensions(100vw, 100px)
     @include flex(center, center);
     background-color: rgba(255,255,255,.85);
-    position: fixed;
+    position: absolute;
     top: 40px;
     font-family: $hnb;
     font-weight: 600;
@@ -99,8 +99,6 @@ body {
   .group {
     @include flex(center, center);
     display: inline-flex;
-    // justify-content: center;
-    // align-items: center;
   }
 
   .white-ul-float {
@@ -146,5 +144,121 @@ body {
     position: relative;
     bottom: 41px;
     right: 10px;
+  }
+
+  //==============================================================================//
+  //                         Sub Menu Drop Down                                   //
+  //==============================================================================//
+//   .dropdown {
+//     z-index: 7;
+//     background: #fff;
+//     border-top: 4px solid #a7a9ac;
+//     border-bottom: 4px solid #a7a9ac;
+//     list-style: none;
+//     overflow: hidden;
+//     position: relative;
+//   }
+//
+//   .col-columned {
+//     width: 100vw;
+//   }
+//
+//   .col-maincontainer {
+//     @include dimensions(100vw, 332px);/*width and height of main container*/
+//     margin: 0 auto; /*center container on page*/
+//   }
+// }
+  .col1, .col2, .col3, .col4, .col5, .col6 {
+    margin: 10px;
+    padding: 0 10px;
+    float: left;
+  }
+
+  /* 1 Column */
+  .container-1 {
+    width: 170px;
+  }
+
+  .container-1 .col1 {
+    width: 100%;
+  }
+
+  /* 2 Columns */
+  .container-2 {
+    width: 270px;
+  }
+
+  .container-2 .col1 {
+    width: 50%;
+  }
+
+  .container-2 .col2 {
+    width: 100%;
+  }
+
+  /* 3 Columns */
+
+  .container-3 {
+    width: 400px
+  }
+
+  .container-3 .col1 {
+    width: 33.33%;
+  }
+
+  .container-3 .col2 {
+    width: 66.66%;
+  }
+
+  .container-3 .col3 {
+    width: 100%;
+  }
+
+  /* 4 Columns */
+
+  .container-4 {
+    width: 500px;
+  }
+
+  .container-4 .col1 {
+    width: 25%;
+  }
+
+  .container-4 .col2 {
+    width: 50%;
+  }
+
+  .container-4 .col3 {
+    width: 75%;
+  }
+
+  .container-4 .col4 {
+    width: 100%;
+  }
+
+    /* 5 Columns */
+
+  .container-5 {
+    width: 600px;
+  }
+
+  .container-5 .col1 {
+    width: 20%;
+  }
+
+  .container-5 .col2 {
+    width: 40%;
+  }
+
+  .container-5 .col3 {
+    width: 60%;
+  }
+
+  .container-5 .col4 {
+    width: 80%;
+  }
+
+  .container-5 .col5 {
+    width: 100%;
   }
 }
