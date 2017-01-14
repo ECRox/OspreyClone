@@ -6,7 +6,7 @@
 
   .mobile-full-width {
     width: 98%;
-    margin: 5px auto;
+    margin: 1em auto;
   }
 
   button.accordion {
@@ -42,12 +42,33 @@
       transition: max-height 0.2s ease-out;
   }
 
-  .footer-pic {
-    background-image: url(http://www.ospreypacks.com/images/decorator/osprey-footer-bg-768.jpg);
+  .icon {
+    text-decoration: none;
+    color: #a7a9ac;
+    display: flex;
+    justify-content: space-between;
   }
 
-  .guarantee-icon {
-    background-image: url(http://www.ospreypacks.com/images/product/pdp/pdp-all-mighty-guarantee.png);
-    background-size: 30px;
+  .equidistant-spacing {
+    display: flex;
+    justify-content: space-between;
   }
+
+  .full-width {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .footer-img {
+    position: relative;
+    bottom:0;
+    left:0;
+  }
+
+  .copyright-text {
+    position: absolute;
+    color: pink;
+    z-index: 1;
+  }
+
 }
