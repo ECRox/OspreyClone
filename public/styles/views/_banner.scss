@@ -355,7 +355,7 @@
     margin-right: 16px;
   }
 
-  .menu ul li {
+  ul li {
     float: left;
     padding: 10px;
   }
@@ -371,6 +371,28 @@
     transition: color .2s ease-in-out;
     color: #0095cf;
   }
+//==============================================================================//
+//                          White Nav Bar                                       //
+//==============================================================================//
+
+  .white-nav {
+    z-index: 8;
+    @include dimensions(100%, 100px)
+    @include flex(center, center);
+    background-color: rgba(255,255,255,.85);
+    position: absolute;
+    top: 40px;
+  }
+
+  .white-nav-text a {
+    color: #000;
+    font-family: $hnb;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
 
 
   // @media (min-width: 1200px){
