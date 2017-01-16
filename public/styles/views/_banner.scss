@@ -316,35 +316,62 @@
 
   .logo-container {
     z-index: 10;
-    // width: 50%;
     position: relative;
-    // float: left;
   }
 
   .logo {
-    // width: 50%;
-    // z-index: 10;
-    // position: relative;
     @include dimensions(186px, 144px);
     @include image('http://www.ospreypacks.com/images/logos/osprey-white-oval-logo-withglow-DOUBLE-RES.png');
   }
 
+  .flag-container {
+    z-index: 11;
+    @include dimensions(30px, 15px);
+    @include image('http://icons.iconarchive.com/icons/icons-land/vista-flags/256/United-States-Flag-1-icon.png');
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 3px;
+    // margin-left: auto;
+  }
+
+  .caret-container {
+    @include dimensions(18px, 22px);
+    @include image('https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-08-128.png');
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    margin-top: 8px;
+    margin-right: 7px;
+  }
+
   .menu {
     z-index: 11;
-    // width: 50%;
-    // float: left;
     font-family: $hn;
     font-size: 14px;
     font-weight: 400;
     color: #fff;
     margin-top: auto;
     margin-bottom: auto;
+    display: flex;
+    margin-right: 16px;
   }
 
   .menu ul li {
     float: left;
     padding: 10px;
   }
+
+  li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    -webkit-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+    color: #0095cf;
+  }
+
 
   // @media (min-width: 1200px){
   //   .test {
