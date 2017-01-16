@@ -5,4 +5,5 @@ angular.module('ospreypack').directive('bannerDirective', function() {
     templateUrl: './views/bannerTmpl.html',
     controller: 'bannerCtrl'
   }
+
 })

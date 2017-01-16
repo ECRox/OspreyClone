@@ -1,151 +1,155 @@
-body {
-    -webkit-font-smoothing: antialiased;
-
-  .banner {
-    position: relative;
-  }
-  //==============================================================================//
-  //                          Black Nav Bar                                       //
-  //==============================================================================//
-  .black-nav {
-    z-index: 9;
-    @include dimensions(100vw, 40px)
-    @include flex(center, center);
-    background-color: #000;
-    position: absolute;
-    top: 0px;
-  }
-
-  .logo {
-    @include dimensions(186px, 144px);
-    @include image('http://www.ospreypacks.com/images/logos/osprey-white-oval-logo-withglow-DOUBLE-RES.png');
-    z-index: 10;
-    position: relative;
-    right: 387px;
-    top: 50px;
-  }
-
-  .flag {
-    @include dimensions(30px, 15px);
-    @include image('http://icons.iconarchive.com/icons/icons-land/vista-flags/256/United-States-Flag-1-icon.png');
-    position: relative;
-    left: 333px;
-  }
-
-  .caret {
-    @include dimensions(18px, 22px);
-    position: relative;
-    left: 35px;
-    bottom: 3px;
-    -webkit-filter: invert(1);
-    filter: invert(1);
-  }
-
-  .links-box {
-    @include flex(space-between, center);
-    flex-direction: row;
-    background: #000;
-    position: relative;
-    left: 368px;
-    font-family: $hn;
-    font-size: 14px;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-
-  .black-ul-float {
-    float: right;
-  }
-
-  .black-li-float {
-    float: left;
-  }
-
-  li a {
-    display: block;
-    padding: 8px 21px 8px 0px;
-    color: #fff;
-    text-decoration: none;
-  }
-
-  li a:hover {
-    -webkit-transition: color .2s ease-in-out;
-    transition: color .2s ease-in-out;
-    color: #0095cf;
-  }
-  //==============================================================================//
-  //                          White Nav Bar                                       //
-  //==============================================================================//
-  .white-nav {
-    z-index: 8;
-    @include dimensions(100vw, 100px)
-    @include flex(center, center);
-    background-color: rgba(255,255,255,.85);
-    position: absolute;
-    top: 40px;
-    font-family: $hnb;
-    font-weight: 600;
-    font-size: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000;
-  }
-
-  .group {
-    @include flex(center, center);
-    display: inline-flex;
-  }
-
-  .white-ul-float {
-    display: inline-flex;
-    position: relative;
-    left: 112px;
-  }
-
-  .black-link {
-    color: #000;
-  }
-
-  .search {
-    @include dimensions(250px, 45px);
-    margin-left: 33px;
-    position: relative;
-    left: 105px;
-  }
-
-  input[type=text] {
-    @include dimensions(250px, 45px);
-    box-sizing: border-box;
-    border-radius: 3px;
-    font-family: $hn;
-    font-size: 16px;
-    font-style: italic;
-    color: #666;
-    box-shadow: inset 0 0 3px 0 rgba(0,0,0,.25);
-    border: none;
-    background-color: #fff;
-    padding: 8px 20px 12px 7px;
-    position: relative;
-    display: inline-block;
-  }
-
-  .search-button {
-    @include dimensions(35px, 35px);
-    transform: scaleX(-1);
-    -webkit-filter: invert(.7);
-    filter: invert(.7);
-    border: 0;
-    float: right;
-    position: relative;
-    bottom: 41px;
-    right: 10px;
-  }
-
+// .banner {
+//     -webkit-font-smoothing: antialiased;
+//     position: relative;
+//
+//   //==============================================================================//
+//   //                          Black Nav Bar                                       //
+//   //==============================================================================//
+//   .black-container {
+//     z-index: 9;
+//     @include dimensions(100%, 40px)
+//     display: flex;
+//     position: relative;
+//     background-color: #000;
+//     top: 0px;
+//   }
+//
+//   .logo-box {
+//     z-index: 10;
+//     @include dimensions(186px, 144px);
+//     @include flex(flex-start, center);
+//     margin-top: -2px;
+//     // padding-left: 200px;
+//   }
+//
+//   .logo {
+//     @include dimensions(186px, 144px);
+//     @include image('http://www.ospreypacks.com/images/logos/osprey-white-oval-logo-withglow-DOUBLE-RES.png');
+//     top: 50px;
+//   }
+//
+//   .flag {
+//     @include dimensions(30px, 15px);
+//     @include image('http://icons.iconarchive.com/icons/icons-land/vista-flags/256/United-States-Flag-1-icon.png');
+//     // position: relative;
+//     // left: 333px;
+//   }
+//
+//   .caret {
+//     @include dimensions(18px, 22px);
+//     // position: relative;
+//     // left: 35px;
+//     // bottom: 3px;
+//     -webkit-filter: invert(1);
+//     filter: invert(1);
+//   }
+//
+//   .links-box {
+//     // @include flex(space-between, center);
+//     // flex-direction: row;
+//     // background: #000;
+//     // position: relative;
+//     // overflow: hidden;
+//     // left: 368px;
+//     font-family: $hn;
+//     font-size: 14px;
+//   }
+//
+//   ul {
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+//     overflow: hidden;
+//   }
+//
+//   .black-ul-float {
+//     float: right;
+//   }
+//
+//   .black-li-float {
+//     float: left;
+//   }
+//
+//   li a {
+//     display: block;
+//     padding: 8px 21px 8px 0px;
+//     color: #fff;
+//     text-decoration: none;
+//   }
+//
+//   li a:hover {
+//     -webkit-transition: color .2s ease-in-out;
+//     transition: color .2s ease-in-out;
+//     color: #0095cf;
+//   }
+//   //==============================================================================//
+//   //                          White Nav Bar                                       //
+//   //==============================================================================//
+//   .white-nav {
+//     z-index: 8;
+//     @include dimensions(100%, 100px)
+//     @include flex(center, center);
+//     background-color: rgba(255,255,255,.85);
+//     position: absolute;
+//     top: 40px;
+//     font-family: $hnb;
+//     font-weight: 600;
+//     font-size: 15px;
+//     text-align: center;
+//     text-transform: uppercase;
+//     color: #000;
+//   }
+//
+//   .group {
+//     @include flex(center, center);
+//     display: inline-flex;
+//   }
+//
+//   .white-ul-float {
+//     display: inline-flex;
+//     // position: relative;
+//     // left: 112px;
+//   }
+//
+//   .black-link {
+//     color: #000;
+//   }
+//
+//   .search {
+//     @include dimensions(250px, 45px);
+//     margin-left: 33px;
+//     // position: relative;
+//     // left: 105px;
+//   }
+//
+//   input[type=text] {
+//     @include dimensions(250px, 45px);
+//     box-sizing: border-box;
+//     border-radius: 3px;
+//     font-family: $hn;
+//     font-size: 16px;
+//     font-style: italic;
+//     color: #666;
+//     box-shadow: inset 0 0 3px 0 rgba(0,0,0,.25);
+//     border: none;
+//     background-color: #fff;
+//     padding: 8px 20px 12px 7px;
+//     position: relative;
+//     display: inline-block;
+//   }
+//
+//   .search-button {
+//     @include dimensions(35px, 35px);
+//     transform: scaleX(-1);
+//     -webkit-filter: invert(.7);
+//     filter: invert(.7);
+//     border: 0;
+//     float: right;
+//     // position: relative;
+//     // bottom: 41px;
+//     // right: 10px;
+//   }
+// }
   //==============================================================================//
   //                         Sub Menu Drop Down                                   //
   //==============================================================================//
@@ -168,97 +172,191 @@ body {
 //     margin: 0 auto; /*center container on page*/
 //   }
 // }
-  .col1, .col2, .col3, .col4, .col5, .col6 {
-    margin: 10px;
-    padding: 0 10px;
+//   li a:hover .dropdown-content {
+//     display: block;
+//   }
+//
+//   .col1, .col2, .col3, .col4, .col5, .col6 {
+//     margin: 10px;
+//     padding: 0 10px;
+//     float: left;
+//   }
+//
+//   /* 1 Column */
+//   .container-1 {
+//     width: 170px;
+//   }
+//
+//   .container-1 .col1 {
+//     width: 100%;
+//   }
+//
+//   /* 2 Columns */
+//   .container-2 {
+//     width: 270px;
+//   }
+//
+//   .container-2 .col1 {
+//     width: 50%;
+//   }
+//
+//   .container-2 .col2 {
+//     width: 100%;
+//   }
+//
+//   /* 3 Columns */
+//
+//   .container-3 {
+//     width: 400px
+//   }
+//
+//   .container-3 .col1 {
+//     width: 33.33%;
+//   }
+//
+//   .container-3 .col2 {
+//     width: 66.66%;
+//   }
+//
+//   .container-3 .col3 {
+//     width: 100%;
+//   }
+//
+//   /* 4 Columns */
+//
+//   .container-4 {
+//     width: 500px;
+//   }
+//
+//   .container-4 .col1 {
+//     width: 25%;
+//   }
+//
+//   .container-4 .col2 {
+//     width: 50%;
+//   }
+//
+//   .container-4 .col3 {
+//     width: 75%;
+//   }
+//
+//   .container-4 .col4 {
+//     width: 100%;
+//   }
+//
+//     /* 5 Columns */
+//
+//   .container-5 {
+//     width: 600px;
+//   }
+//
+//   .container-5 .col1 {
+//     width: 20%;
+//   }
+//
+//   .container-5 .col2 {
+//     width: 40%;
+//   }
+//
+//   .container-5 .col3 {
+//     width: 60%;
+//   }
+//
+//   .container-5 .col4 {
+//     width: 80%;
+//   }
+//
+//   .container-5 .col5 {
+//     width: 100%;
+//   }
+// }
+
+//==============================================================================//
+//   //                          Test                                           //
+//   //=========================================================================//
+// * {
+//   box-sizing: border-box;
+//   -webkit-font-smoothing: antialiased;
+//   position: relative;
+//   display: block;
+  // .black-header {
+  //   z-index: 10;
+  //   @include dimensions(100%, 40px);
+  //   background-color: #000;
+  //   color: #fff;
+  //   font-family: $hn;
+  //   font-weight: 400;
+  //   font-size: 14px;
+  // }
+  //
+  // .black-container {
+  //   position: relative;
+  //   margin-right: auto;
+  //   margin-left: auto;
+  // }
+
+.header {
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+
+  .black-nav {
+    @include dimensions(100%, 40px);
+    @include flex(space-around, flex-start);
+    background-color: #000;
+  }
+
+  .black-nav-container {
+    width: 1200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 2px;
+  }
+
+  .logo-container {
+    z-index: 10;
+    // width: 50%;
+    position: relative;
+    // float: left;
+  }
+
+  .logo {
+    // width: 50%;
+    // z-index: 10;
+    // position: relative;
+    @include dimensions(186px, 144px);
+    @include image('http://www.ospreypacks.com/images/logos/osprey-white-oval-logo-withglow-DOUBLE-RES.png');
+  }
+
+  .menu {
+    z-index: 11;
+    // width: 50%;
+    // float: left;
+    font-family: $hn;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .menu ul li {
     float: left;
+    padding: 10px;
   }
 
-  /* 1 Column */
-  .container-1 {
-    width: 170px;
-  }
+  // @media (min-width: 1200px){
+  //   .test {
+  //   width: 1200px;
+  //   }
+  // }
 
-  .container-1 .col1 {
-    width: 100%;
-  }
-
-  /* 2 Columns */
-  .container-2 {
-    width: 270px;
-  }
-
-  .container-2 .col1 {
-    width: 50%;
-  }
-
-  .container-2 .col2 {
-    width: 100%;
-  }
-
-  /* 3 Columns */
-
-  .container-3 {
-    width: 400px
-  }
-
-  .container-3 .col1 {
-    width: 33.33%;
-  }
-
-  .container-3 .col2 {
-    width: 66.66%;
-  }
-
-  .container-3 .col3 {
-    width: 100%;
-  }
-
-  /* 4 Columns */
-
-  .container-4 {
-    width: 500px;
-  }
-
-  .container-4 .col1 {
-    width: 25%;
-  }
-
-  .container-4 .col2 {
-    width: 50%;
-  }
-
-  .container-4 .col3 {
-    width: 75%;
-  }
-
-  .container-4 .col4 {
-    width: 100%;
-  }
-
-    /* 5 Columns */
-
-  .container-5 {
-    width: 600px;
-  }
-
-  .container-5 .col1 {
-    width: 20%;
-  }
-
-  .container-5 .col2 {
-    width: 40%;
-  }
-
-  .container-5 .col3 {
-    width: 60%;
-  }
-
-  .container-5 .col4 {
-    width: 80%;
-  }
-
-  .container-5 .col5 {
-    width: 100%;
-  }
+  // @media (max-width: 1199px) and (min-width: 992px){
+  //   .test {
+  //     width: 992px;
+  //     display: flex;
+  //     justify-content: space-between;
+  //   }
+  //}
 }
