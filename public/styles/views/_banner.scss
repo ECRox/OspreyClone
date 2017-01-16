@@ -404,14 +404,9 @@
     text-transform: uppercase;
     }
 
-  .center-list {
-    @include flex(center, center);
-  }
-
   .search {
     @include dimensions(250px, 45px);
     margin-left: 33px;
-    background: yellow;
     position: relative;
   }
 
@@ -442,15 +437,18 @@
     bottom: 41px;
     right: 10px;
    }
+
+
+// }
+
+
+
+ @media (max-width: 1205px) and (min-width: 992px) {
+     .white-nav-text {
+         font-family: $os;
+         font-size: 30px;
+     }
  }
-
-
-
-  // @media (min-width: 1200px){
-  //   .test {
-  //   width: 1200px;
-  //   }
-  // }
 
   // @media (max-width: 1199px) and (min-width: 992px){
   //   .test {
@@ -459,3 +457,4 @@
   //     justify-content: space-between;
   //   }
   //}
+}
