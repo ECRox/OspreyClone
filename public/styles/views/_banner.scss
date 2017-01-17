@@ -159,8 +159,8 @@
 
 
 body { font-family: "PT Sans", sans-serif; background: #f5f5f5; font-size: 100%;}
-a { color: #000; text-decoration: none;}
-
+a { color: #666; text-decoration: none;}
+h3 { color: #000;}
 .nav {
   z-index: 8;
   @include dimensions(100%, 100px)
@@ -185,25 +185,27 @@ a { color: #000; text-decoration: none;}
   transition: color .2s ease-in-out;
   color: #0095cf;
 }
-.nav > li:first-child > a { border-left: 0; }
-.nav > li:last-child > a { border-right: 0; }
+// .nav > li:first-child > a { border-left: 0; }
+// .nav > li:last-child > a { border-right: 0; }
 .nav > li:hover > div {display: block;}
 
 /* MEGA DROP DOWN */
 
+
 .nav > li > div {
 	position: absolute;
-  color: #000;
-	left: 0;
-	// top: 65px;
+  font-family: $hnb;
+  color: #666;
+  padding: 10px 10px 10px 10px;
+	// margin: auto;
+  height: 332px;
+	top: 65px;
 	display: none;
-	background: orange;
-	padding: 10px 10px;
-	box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-	overflow: hidden;
+	background-color: rgba(255,255,255,.95);
+	// overflow: hidden;
 }
 .nav > li > div p { color: purple; }
-// .nav > li > div.right { right: 0; left: auto }
+.nav > li > div.right { right: 0; left: auto }
 
 // h3 {
 //
@@ -222,7 +224,7 @@ a { color: #000; text-decoration: none;}
 
 
 	/* 4 Column */
-	.container-4 { width: 500px; }
+	.container-4 { width: 100vw; }
 	.container-4 .col1 { width: 25%; }
 	.container-4 .col2 { width: 50% }
 	.container-4 .col3 { width: 75% }
