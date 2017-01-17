@@ -169,8 +169,17 @@ h3 { color: #000;}
   position: absolute;
 }
 
-.nav li { list-style: none;  }
-.nav > li { padding: 0; float: left; position: relative; }
+.nav li {
+  list-style: none;
+}
+
+.nav > li {
+  padding: 0;
+  float: left;
+  position: relative;
+  height: 100px;
+}
+
 .nav > li > a {
   color: #000;
   font-family: $hnb;
@@ -180,6 +189,7 @@ h3 { color: #000;}
   text-transform: uppercase;
   padding: 10px 10px;
 }
+
 .nav > li:hover > a {
   -webkit-transition: color .2s ease-in-out;
   transition: color .2s ease-in-out;
@@ -199,7 +209,7 @@ h3 { color: #000;}
   padding: 10px 10px 10px 10px;
 	// margin: auto;
   height: 332px;
-	top: 65px;
+	top: 100px;
 	display: none;
 	background-color: rgba(255,255,255,.95);
 	// overflow: hidden;
