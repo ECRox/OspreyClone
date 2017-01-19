@@ -13,7 +13,7 @@
 }
 
 .button-text {
-  font-family: $hn;
+  font-family: $os;
   text-transform: uppercase;
   color: white;
   font-size: 1em;
@@ -156,4 +156,12 @@ h6 {
 .instagram-carousel {
   margin-bottom: 15em;
   background-color: #EAEAEA;
+}
+
+@media screen and (min-width: 840px) {
+
+}
+
+@media screen and (min-width: 1096px) {
+  
 }
