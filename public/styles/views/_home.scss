@@ -158,10 +158,36 @@ h6 {
   background-color: #EAEAEA;
 }
 
-@media screen and (min-width: 840px) {
 
+//==============================================================================//
+//                          Carousel                                            //
+//==============================================================================//
+
+.horizontal-scroll-wrapper {
+  width: 100px;
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg);
+  transform-origin: right top;
+  transform:rotate(-90deg) translateY(-100px);
 }
 
-@media screen and (min-width: 1096px) {
+.horizontal-scroll-wrapper > div {
+  width: 100px;
+  height: 100px;
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+
+.pack-container {
+
+
+  @media screen and (min-width: 840px) {
+
+  }
+
+  @media screen and (min-width: 1096px) {
   
+  }
 }
