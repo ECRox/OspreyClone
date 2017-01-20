@@ -17,21 +17,21 @@ var paths = {
     // querySource: ['./queries/**/*.sql']
 };
 
-gulp.task('sass', function() {
-    return gulp.src(paths.sassSource)
-        .pipe(sass())
-        .pipe(concat('bundle.css'))
-        .pipe(cssmin())
-        .pipe(rename({extname: ".min.css"}))
-        .pipe(gulp.dest('./dist'));
-});
-
-// gulp.task('sass', function () {
-//  return gulp.src(paths.sassSource)
-//    .pipe(sass())
-//    .pipe(concat('bundle.css'))
-//    .pipe(gulp.dest('./dist'));
+// gulp.task('sass', function() {
+//     return gulp.src(paths.sassSource)
+//         .pipe(sass())
+//         .pipe(concat('bundle.css'))
+//         .pipe(cssmin())
+//         .pipe(rename({extname: ".min.css"}))
+//         .pipe(gulp.dest('./dist'));
 // });
+
+gulp.task('sass', function () {
+ return gulp.src(paths.sassSource)
+   .pipe(sass())
+   .pipe(concat('bundle.css'))
+   .pipe(gulp.dest('./dist'));
+});
 
 gulp.task('js', function() {
     return gulp.src(paths.jsSource)
