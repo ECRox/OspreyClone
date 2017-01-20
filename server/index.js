@@ -21,6 +21,7 @@ app.use(cors());
 //==============================================================================//
 //eg app.get('/api/getProduct/:id', productCtrl.getProduct);
 
+app.get('/getAllImages', mainCtrl.getImages);
 
 
 var port = 3000;
