@@ -4,12 +4,24 @@
   font-family: $hnb;
   border-top: 5px solid #a7a9ac;
 
+  .guarantee-black-tag {
+    display: none;
+  }
+
   .mobile-full-width {
     width: 98%;
-    margin: 5px auto;
+    margin: 1em auto;
+  }
+
+  .all-caps-bold {
+    font-family: $os;
+    font-weight: bolder;
+    text-transform: uppercase;
   }
 
   button.accordion {
+    font-family: $hnb;
+    font-size: 15px;
     background-color: white;
     cursor: pointer;
     padding: 18px;
@@ -42,12 +54,157 @@
       transition: max-height 0.2s ease-out;
   }
 
-  .footer-pic {
-    background-image: url(http://www.ospreypacks.com/images/decorator/osprey-footer-bg-768.jpg);
+  li {
+    color: #666;
+    font-size: 12px;
+    padding: 3px;
   }
 
-  .guarantee-icon {
-    background-image: url(http://www.ospreypacks.com/images/product/pdp/pdp-all-mighty-guarantee.png);
-    background-size: 30px;
+  .icon {
+    text-decoration: none;
+    color: #a7a9ac;
+    display: flex;
+    justify-content: space-between;
   }
+
+  .equidistant-spacing {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  form {
+    display: block;
+  }
+
+  .email {
+    position: relative;
+    float: left;
+    width: 70%;
+    z-index: 200;
+    // width: 200px;
+    // height: 45px;
+  }
+
+  input[type=text] {
+    // width: 200px;
+    // height: 45px;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 1px solid #a7a9ac;
+    display: inline-block;
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .email-container {
+    position: relative;
+  }
+
+  .email-icon-btn {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: -10px;
+    z-index: 201;
+  }
+
+  .left-margin {
+    margin-left: 1em;
+  }
+
+  .full-width {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .footer-img {
+    position: relative;
+    bottom:0;
+    left:0;
+  }
+
+  .copyright-text {
+    position: absolute;
+    color: white;
+    bottom: 1em;
+    text-align: center;
+    width: 100%;
+  }
+
+  @media (min-width: 840px) {
+    .container {
+      width: 100%;
+    }
+
+    .footer-flex-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .guarantee-black-tag {
+      display: block;
+      width: 25%;
+      height: 25%;
+    }
+
+    .footer-accordion-lists {
+      float: left;
+      width: 50%;
+    }
+
+    .footer-accordion-lists:before {
+      box-sizing: border-box;
+      content: " ";
+      display: table;
+    }
+
+    .footer-accordion-lists:after {
+      clear: both;
+      content: " ";
+      display: table;
+    }
+
+    button.accordion {
+      border-bottom: none;
+    }
+
+    // .accordion {
+    //   display: none;
+    // }
+
+    .list {
+      width: 100px;
+      height: 200px;
+      background: white;
+    }
+
+    .accordion:after, .accordion:before {
+      display: none;
+    }
+
+    .panel ul {
+      display: block!important
+    }
+
+    .mobile-view-guarantee {
+      display: none;
+    }
+
+    .email-and-find-dealer {
+      width: 25%;
+    }
+
+    .full-width {
+      width: 100%;
+    }
+
+    .footer-img {
+      bottom: 0
+    }
+
+  }
+
 }
