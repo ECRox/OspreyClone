@@ -9,7 +9,7 @@
 <div class="wrapper">
   <div class="scrolls">
     <div class="pack-container">
-      <!-- img -->
+      <img src="http://www.ospreypacks.com/images/product/hero/kamber32_side_coldblue.jpg" alt="">
       <h4>Ski and Snowboard Packs</h4>
       <h6>Combining safety with stylish utility and fit.</h6>
       <button class="blue-border-button" type="button" name="button">Shop all &#8250;</button>
@@ -98,73 +98,23 @@
   </div>
 </div>
 
-<!-- carosel #2 -->
+<!-- carousel #2 -->
 <div class="">
   <p class="trending-title-text">Trending Gear</p>
-  <div class="">
-    <a href="#">Backpack img</a>
-    <div class="gray-bar"></div>
-    <div class="info-icon"></div>
-    <div class="color-swatch"></div>
-    <h3>Farpoint 55</h3>
-    <p>Travel | Trekking</p>
-    <h4>$180.00</h4>
-    <div class="star-rating"></div>
-  </div>
-
-  <div class="">
-    <a href="#">Backpack img</a>
-    <div class="gray-bar"></div>
-    <div class="info-icon"></div>
-    <div class="color-swatch"></div>
-    <h3>Atmos AG 65</h3>
-    <p>Backpacking | Thru-hiking</p>
-    <h4>$260.00</h4>
-    <div class="star-rating"></div>
-  </div>
-
-  <div class="">
-    <a href="#">Backpack img</a>
-    <div class="gray-bar"></div>
-    <div class="info-icon"></div>
-    <div class="color-swatch"></div>
-    <h3>Porter 46</h3>
-    <p>Trekking | Gear Hauling</p>
-    <h4>$130.00</h4>
-    <div class="star-rating"></div>
-  </div>
-
-  <div class="">
-    <a href="#">Backpack img</a>
-    <div class="gray-bar"></div>
-    <div class="info-icon"></div>
-    <div class="color-swatch"></div>
-    <h3>Farpoint 40</h3>
-    <p>Travel | Trekking</p>
-    <h4>$160.00</h4>
-    <div class="star-rating"></div>
-  </div>
-
-  <div class="">
-    <a href="#">Backpack img</a>
-    <div class="gray-bar"></div>
-    <div class="info-icon"></div>
-    <div class="color-swatch"></div>
-    <h3>Kamber 32</h3>
-    <p>Backcountry Riding</p>
-    <h4>$170.00</h4>
-    <div class="star-rating"></div>
-  </div>
-
-  <div class="">
-    <a href="#">Backpack img</a>
-    <div class="gray-bar"></div>
-    <div class="info-icon"></div>
-    <div class="color-swatch"></div>
-    <h3>Daylite</h3>
-    <p>Everyday Use</p>
-    <h4>$50.00</h4>
-    <div class="star-rating"></div>
+  <div class="wrapper">
+    <div class="scrolls">
+      <div class="pack-container" ng-repeat="pack in packs  | unique: 'name' | limitTo: 6">
+        <a href="#">
+        <img class="pack-img" ng-src="{{pack.img_url}}"></a>
+        <div class="gray-bar"></div>
+        <div class="info-icon"></div>
+        <div class="color-swatch">{{pack.color}}</div>
+        <h3>{{pack.name}}</h3>
+        <p>{{pack.activity}}</p>
+        <h4>{{pack.price | currency}}</h4>
+        <div class="star-rating"></div>
+      </div>
+    </div>
   </div>
 </div>
 
