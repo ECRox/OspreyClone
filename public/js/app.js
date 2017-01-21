@@ -1,4 +1,4 @@
-angular.module('ospreypack', ['ui.router'])
+angular.module('ospreypack', ['ui.router', 'angular.filter'])
 .config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
 
@@ -7,7 +7,12 @@ angular.module('ospreypack', ['ui.router'])
     .state('home', {
       templateUrl: './views/home.html',
       controller: 'homeCtrl',
-      url: '/'
+      url: '/',
+      resolve: {
+        packs: function(homeService) {
+          return homeService.getImages();
+        }
+      }
     })
     //Product
     .state('product', {

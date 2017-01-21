@@ -139,6 +139,7 @@ h6 {
 .trending-title-text {
   font-family: $hn;
   text-align: center;
+  margin: 1em 0 1em 0;
 }
 
 .ninth-section {
@@ -174,14 +175,14 @@ h6 {
   -moz-border-radius: 5px;
   border-radius: 5px;
   margin-bottom: 20px !important;
-  width: 800px;
+  width: 100%;
   padding-top: 5px;
-    }
+}
 
 .scrolls {
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 80px;
+  height: 300px;
   white-space:nowrap
 }
 
@@ -196,6 +197,10 @@ h6 {
   vertical-align:top;
 }
 
+//Carousel #2//
+.pack-img {
+  width: 20%;
+}
 
 
 @media screen and (min-width: 840px) {
