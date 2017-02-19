@@ -2,11 +2,25 @@
   -webkit-font-smoothing: antialiased;
   display: relative;
 
+  a {
+    color: #a7a9ac;
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+    -o-transition:color .2s ease-in-out;
+    -ms-transition:color .2s ease-in-out;
+    -moz-transition:color .2s ease-in-out;
+    -webkit-transition:color .2s ease-in-out;
+  }
+
+  a:hover {
+    color: #0095cf;
+  }
+
   .black-nav {
     @include dimensions(100%, 42px);
     background-color: black;
-    padding: 0 10px;
     color: #a7a9ac;
+    padding: 0 10px;
     font-family: $hn;
     font-size: 14px;
     display: flex;
