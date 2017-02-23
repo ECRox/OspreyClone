@@ -597,5 +597,20 @@ h6 {
 .pack-img {
   width: 20%; }
 
+.color-swatch {
+  margin-top: 15px;
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+  float: left;
+  cursor: pointer;
+  position: relative; }
+
+.CC-633 {
+  background-color: #0C4D8A; }
+
+.CC-398 {
+  background-color: #B91623; }
+
 .background {
   background-color: #000000; }
