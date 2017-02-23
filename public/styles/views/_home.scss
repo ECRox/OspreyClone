@@ -139,6 +139,7 @@ h6 {
 .trending-title-text {
   font-family: $hn;
   text-align: center;
+  margin: 1em 0 1em 0;
 }
 
 .ninth-section {
@@ -163,31 +164,68 @@ h6 {
 //                          Carousel                                            //
 //==============================================================================//
 
-.horizontal-scroll-wrapper {
-  width: 100px;
-  height: 300px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transform: rotate(-90deg);
-  transform-origin: right top;
-  transform:rotate(-90deg) translateY(-100px);
+// ****** top carousel ****** //
+.wrapper {
+  background:#EFEFEF;
+  box-shadow: 1px 1px 10px #999;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px !important;
+  width: 100%;
+  padding-top: 5px;
 }
 
-.horizontal-scroll-wrapper > div {
-  width: 100px;
-  height: 100px;
-  transform: rotate(90deg);
-  transform-origin: right top;
+.scrolls {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 300px;
+  white-space:nowrap
 }
 
 .pack-container {
+  box-shadow: 1px 1px 10px #999;
+  margin: 2px;
+  max-height: 50px;
+  cursor: pointer;
+  display:inline-block;
+  *display:inline;
+  *zoom:1;
+  vertical-align:top;
+}
+
+//Carousel #2//
+.pack-img {
+  width: 20%;
+}
+
+.color-swatch {
+  margin-top: 15px;
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+  float: left;
+  cursor: pointer;
+  position: relative;
+}
+
+.CC-633 {
+    background-color: #0C4D8A;
+}
+
+.CC-398 {
+    background-color: #B91623;
+}
 
 
-  @media screen and (min-width: 840px) {
 
-  }
+@media screen and (min-width: 840px) {
 
-  @media screen and (min-width: 1096px) {
-  
-  }
+}
+
+@media screen and (min-width: 1096px) {
+
 }
