@@ -304,7 +304,9 @@ table {
 
 .all {
   -webkit-font-smoothing: antialiased;
-  display: relative; }
+  display: relative;
+  /* Modal Content/Box */
+  /* CLOSE X */ }
   .all a {
     color: #a7a9ac;
     text-decoration: none;
@@ -355,6 +357,41 @@ table {
     width: 60px;
     height: 45.5px;
     background-color: red; }
+  .all .modal-bg {
+    z-index: 14;
+    /* fix this*/
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 99;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .all .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */ }
+  .all .close {
+    color: #fff;
+    position: absolute;
+    top: 15%;
+    right: 8%;
+    font-size: 53px;
+    font-weight: 700;
+    cursor: pointer; }
+  .all .close:hover,
+  .all .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer; }
 
 .footer {
   -webkit-font-smoothing: antialiased;

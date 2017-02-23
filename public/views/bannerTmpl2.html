@@ -2,7 +2,8 @@
   <!-- BLACK HEADER -->
   <header class="black-nav">
       <div class="left-group"><i class="material-icons md-18">place</i><a href="/">&nbspDealers</a></div>
-      <div class="right-group"><a href="/">Wishlist<a></div>
+      <div class="right-group" ng-click="showModal=!showModal"><a href="#">Wishlist</a></div>
+
   </header>
   <!-- WHITE HEADER -->
   <header class="white-nav">
@@ -10,6 +11,12 @@
     <div class="mobile-logo"></div>
     <div class="icon"><i class="material-icons md-48">search</i></div>
   </header>
+
+  <!-- MODAL -->
+  <div class="modal-bg" ng-show="showModal">
+    <span class="close" ng-click="showModal = !showModal">&times;</span>
+  </div>
+
 
 </section>
 
