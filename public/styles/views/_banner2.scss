@@ -78,7 +78,7 @@
   .modal-bg {
     display: none;
     position: fixed;
-    z-index: 99;
+    z-index: 1;
     background-color: rgba(0, 0, 0, .85);
     left: 0;
     top: 0;
@@ -106,6 +106,21 @@
     cursor: pointer;
   }
 
+  //CONTENT
+  .modal-content {
+    display: block;
+      position: relative;
+      max-width: 92vw;
+      margin: 4vh 4vw;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s;
+  }
+
   //HEADER
   .modal-header {
       padding: 30px;
@@ -120,14 +135,15 @@
 
   //BODY
   .modal-body {
-    padding: 30px 15px;
     color: #333;
     font-family: $hn;
+    font-size: 15px;
     text-align: center;
     line-height: 23px;
     border-bottom: 2px solid #f8f8f8;
     border-top: 2px solid #f8f8f8;
     background: red;
+    padding: 30px;
   }
 
   //FOOTER
@@ -137,27 +153,27 @@
       color: #333;
   }
 
-  //CONTENT
-  .modal-content {
-      position: relative;
-      max-width: 92vw;
-      background-color: #fefefe;
-      margin: auto;
-      padding: 0;
-      -webkit-animation-name: animatetop;
-      -webkit-animation-duration: 0.4s;
-      animation-name: animatetop;
-      animation-duration: 0.4s
-  }
   //ANIMATION
   @-webkit-keyframes animatetop {
-      from {top: -300px; opacity: 0}
-      to {top: 0; opacity: 1}
+      from {
+        top: -300px;
+        opacity: 0
+      }
+      to {
+        top: 0;
+        opacity: 1
+      }
   }
 
   @keyframes animatetop {
-      from {top: -300px; opacity: 0}
-      to {top: 0; opacity: 1}
+      from {
+        top: -300px;
+        opacity: 0
+      }
+      to {
+        top: 0;
+        opacity: 1
+      }
   }
 
 

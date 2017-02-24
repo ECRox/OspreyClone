@@ -358,7 +358,7 @@ table {
   .all .modal-bg {
     display: none;
     position: fixed;
-    z-index: 99;
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.85);
     left: 0;
     top: 0;
@@ -381,6 +381,18 @@ table {
     color: #999;
     text-decoration: none;
     cursor: pointer; }
+  .all .modal-content {
+    display: block;
+    position: relative;
+    max-width: 92vw;
+    margin: 4vh 4vw;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s; }
   .all .modal-header {
     padding: 30px;
     background-color: #fff;
@@ -391,28 +403,19 @@ table {
     text-transform: uppercase;
     text-align: center; }
   .all .modal-body {
-    padding: 30px 15px;
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
+    font-size: 15px;
     text-align: center;
     line-height: 23px;
     border-bottom: 2px solid #f8f8f8;
     border-top: 2px solid #f8f8f8;
-    background: red; }
+    background: red;
+    padding: 30px; }
   .all .modal-footer {
     padding: 30px;
     background-color: #fff;
     color: #333; }
-  .all .modal-content {
-    position: relative;
-    max-width: 92vw;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s; }
 
 @-webkit-keyframes animatetop {
   from {
