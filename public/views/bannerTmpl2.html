@@ -15,32 +15,26 @@
   <!-- MODAL -->
   <div class="modal-bg" ng-show="showModal">
     <!-- <span class="close" ng-click="showModal = !showModal">&times;</span> -->
-
-    <span class="x-box" ng-click="showModal = !showModal">
-      <div class="right"></div>
-      <div class="left"></div>
-    </span>
-
-
-
-
+    <div class="x-box" ng-click="showModal=!showModal">
+      <span class="right"></span>
+      <span class="left"></span>
+    </div>
     <!-- MODAL CONTENTS -->
-    <div class="test">
     <div class="modal-content">
       <div class="modal-header">
         <h2>Please login or create an account</h2>
       </div>
-
       <div class="modal-body">
         Your Osprey wish list is a great place to keep track of all the things you really want.
         Share with family and friends so they'll know just what to get you for that
         special occasion.
       </div>
       <div class="modal-footer">
-        <h3>Modal Footer</h3>
+        <button class="button cancel">Cancel</button>
+        <button class="button login">Login</button>
       </div>
     </div>
-  </div>
+
   </div>
 
 

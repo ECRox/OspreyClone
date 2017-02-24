@@ -89,34 +89,31 @@
   }
 
   // CLOSE X
-  .close {
-    color: #fff;
-    position: absolute;
-    top: 158px;
-    right: 20px;
-    font-size: 53px;
-    font-weight: 700;
-    cursor: pointer;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
-  }
+  // .close {
+  //   color: #fff;
+  //   position: absolute;
+  //   top: 158px;
+  //   right: 20px;
+  //   font-size: 53px;
+  //   font-weight: 700;
+  //   cursor: pointer;
+  // }
+  //
+  // .close:hover,
+  // .close:focus {
+  //   color: #999;
+  //   text-decoration: none;
+  //   cursor: pointer;
+  // }
 
   .x-box {
-    z-index: 2;
+    // z-index: 2;
     @include dimensions(50px, 50px);
     position: absolute;
     top: 158px;
     right: 26px;
-    background: blue;
+    @include flex(center, center);
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .left {
@@ -125,8 +122,6 @@
     height: 50px;
     background-color: #fff;
     position: absolute;
-    // top: 158px;
-    // right: 20px;
     cursor: pointer;
     transform: rotate(45deg);
   }
@@ -137,8 +132,6 @@
     height: 50px;
     background-color: #fff;
     position: absolute;
-    // top: 158px;
-    // right: 20px;
     cursor: pointer;
     transform: rotate(-45deg);
   }
@@ -147,16 +140,18 @@
   //CONTENT
   .modal-content {
     display: block;
-      position: relative;
-      max-width: 92vw;
-      margin: 4vh 4vw;
-      background-color: #fefefe;
-      margin: auto;
-      padding: 0;
-      -webkit-animation-name: animatetop;
-      -webkit-animation-duration: 0.4s;
-      animation-name: animatetop;
-      animation-duration: 0.4s;
+    z-index: 4;
+    position: relative;
+    max-width: 92vw;
+    // margin: 4vh 4vw;
+    margin-top: 60px;
+    background-color: #fefefe;
+    // margin: auto;
+    padding: 0;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
   }
 
   //HEADER
@@ -186,9 +181,55 @@
 
   //FOOTER
   .modal-footer {
-      padding: 30px;
-      background-color: #fff;
-      color: #333;
+    padding: 30px;
+    background-color: #fff;
+    @include flex(center, center);
+  }
+
+  .button {
+    @include dimensions(120px, 45px);
+    @include flex(center, center);
+    font-family: $os;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    letter-spacing: .1em;
+    border-radius: 5px;
+    border-width: 2px;
+    white-space: normal;
+    margin: 2px;
+  }
+
+  .cancel {
+    background-color: #5cb85c;
+    color: #fff;
+    border-color: #4cae4c;
+    border-style: solid;
+  }
+
+  .cancel:hover {
+    background-color: #80c780;
+    color: #fff;
+    border-color: #6ec06e;
+    border-style: solid;
+
+  }
+
+  .login {
+    background-color: #fff;
+    color: $blue;
+    border-color: $blue;
+    border-style: solid;
+
+  }
+
+  .login:hover {
+    color: #03b8ff;
+    border-color: #03b8ff;
+    border-style: solid;
+
   }
 
   //ANIMATION

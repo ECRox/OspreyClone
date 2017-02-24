@@ -368,31 +368,16 @@ table {
     justify-content: center;
     align-items: center;
     overflow: auto; }
-  .all .close {
-    color: #fff;
-    position: absolute;
-    top: 158px;
-    right: 20px;
-    font-size: 53px;
-    font-weight: 700;
-    cursor: pointer; }
-  .all .close:hover,
-  .all .close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer; }
   .all .x-box {
-    z-index: 2;
     width: 50px;
     height: 50px;
     position: absolute;
     top: 158px;
     right: 26px;
-    background: blue;
-    cursor: pointer;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    cursor: pointer; }
   .all .left {
     z-index: 3;
     width: 2px;
@@ -411,11 +396,11 @@ table {
     transform: rotate(-45deg); }
   .all .modal-content {
     display: block;
+    z-index: 4;
     position: relative;
     max-width: 92vw;
-    margin: 4vh 4vw;
+    margin-top: 60px;
     background-color: #fefefe;
-    margin: auto;
     padding: 0;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -443,7 +428,45 @@ table {
   .all .modal-footer {
     padding: 30px;
     background-color: #fff;
-    color: #333; }
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .all .button {
+    width: 120px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", Tahoma, Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    letter-spacing: .1em;
+    border-radius: 5px;
+    border-width: 2px;
+    white-space: normal;
+    margin: 2px; }
+  .all .cancel {
+    background-color: #5cb85c;
+    color: #fff;
+    border-color: #4cae4c;
+    border-style: solid; }
+  .all .cancel:hover {
+    background-color: #80c780;
+    color: #fff;
+    border-color: #6ec06e;
+    border-style: solid; }
+  .all .login {
+    background-color: #fff;
+    color: #0095cf;
+    border-color: #0095cf;
+    border-style: solid; }
+  .all .login:hover {
+    color: #03b8ff;
+    border-color: #03b8ff;
+    border-style: solid; }
 
 @-webkit-keyframes animatetop {
   from {
