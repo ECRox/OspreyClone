@@ -38,7 +38,7 @@
     align-items: center;
     padding-left: 5px;
   }
-  //drop pin size
+  //DROP PIN SIZE
   .material-icons.md-18 {
     font-size: 18px;
   }
@@ -57,7 +57,7 @@
     padding: 16px 10px;
     @include flex(space-between, center);
   }
-  //icon sizes
+  //ICON SIZES
   .material-icons.md-48 {
     font-size: 39px;
   }
@@ -73,29 +73,22 @@
     background-color: red;
   }
   //********************************** MODAL **********************************//
+  // MODAL
+
   .modal-bg {
-    z-index: 14; /* fix this*/
-    background: rgba(0, 0, 0, .85);
-    z-index: 99;
+    display: none;
     position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    z-index: 99;
+    background-color: rgba(0, 0, 0, .85);
+    left: 0;
+    top: 0;
+    @include dimensions(100%, 100%);
+    // transform: translate(-50%, -50%);
     @include flex(center, center);
+    overflow: auto;
   }
 
-  /* Modal Content/Box */
-  .modal-content {
-      background-color: #fefefe;
-      margin: 15% auto; /* 15% from the top and centered */
-      padding: 20px;
-      border: 1px solid #888;
-      width: 80%; /* Could be more or less, depending on screen size */
-  }
-
-  /* CLOSE X */
+  // CLOSE X
   .close {
     color: #fff;
     position: absolute;
@@ -111,6 +104,60 @@
     color: #999;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  //HEADER
+  .modal-header {
+      padding: 30px;
+      background-color: #fff;
+      color: #333;
+      font-family: $hn;
+      font-weight:bold;
+      font-size: 18px;
+      text-transform: uppercase;
+      text-align: center;
+  }
+
+  //BODY
+  .modal-body {
+    padding: 30px 15px;
+    color: #333;
+    font-family: $hn;
+    text-align: center;
+    line-height: 23px;
+    border-bottom: 2px solid #f8f8f8;
+    border-top: 2px solid #f8f8f8;
+    background: red;
+  }
+
+  //FOOTER
+  .modal-footer {
+      padding: 30px;
+      background-color: #fff;
+      color: #333;
+  }
+
+  //CONTENT
+  .modal-content {
+      position: relative;
+      max-width: 92vw;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
+  }
+  //ANIMATION
+  @-webkit-keyframes animatetop {
+      from {top: -300px; opacity: 0}
+      to {top: 0; opacity: 1}
+  }
+
+  @keyframes animatetop {
+      from {top: -300px; opacity: 0}
+      to {top: 0; opacity: 1}
   }
 
 

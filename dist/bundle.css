@@ -304,9 +304,7 @@ table {
 
 .all {
   -webkit-font-smoothing: antialiased;
-  display: relative;
-  /* Modal Content/Box */
-  /* CLOSE X */ }
+  display: relative; }
   .all a {
     color: #a7a9ac;
     text-decoration: none;
@@ -358,27 +356,18 @@ table {
     height: 45.5px;
     background-color: red; }
   .all .modal-bg {
-    z-index: 14;
-    /* fix this*/
-    background: rgba(0, 0, 0, 0.85);
-    z-index: 99;
+    display: none;
     position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.85);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; }
-  .all .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    /* Could be more or less, depending on screen size */ }
+    align-items: center;
+    overflow: auto; }
   .all .close {
     color: #fff;
     position: absolute;
@@ -392,6 +381,54 @@ table {
     color: #999;
     text-decoration: none;
     cursor: pointer; }
+  .all .modal-header {
+    padding: 30px;
+    background-color: #fff;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center; }
+  .all .modal-body {
+    padding: 30px 15px;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+    text-align: center;
+    line-height: 23px;
+    border-bottom: 2px solid #f8f8f8;
+    border-top: 2px solid #f8f8f8;
+    background: red; }
+  .all .modal-footer {
+    padding: 30px;
+    background-color: #fff;
+    color: #333; }
+  .all .modal-content {
+    position: relative;
+    max-width: 92vw;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s; }
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
 
 .footer {
   -webkit-font-smoothing: antialiased;
