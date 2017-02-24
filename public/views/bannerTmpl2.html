@@ -14,8 +14,18 @@
 
   <!-- MODAL -->
   <div class="modal-bg" ng-show="showModal">
-    <span class="close" ng-click="showModal = !showModal">&times;</span>
+    <!-- <span class="close" ng-click="showModal = !showModal">&times;</span> -->
+
+    <span class="x-box" ng-click="showModal = !showModal">
+      <div class="right"></div>
+      <div class="left"></div>
+    </span>
+
+
+
+
     <!-- MODAL CONTENTS -->
+    <div class="test">
     <div class="modal-content">
       <div class="modal-header">
         <h2>Please login or create an account</h2>
@@ -30,6 +40,7 @@
         <h3>Modal Footer</h3>
       </div>
     </div>
+  </div>
   </div>
 
 

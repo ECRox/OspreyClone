@@ -371,8 +371,8 @@ table {
   .all .close {
     color: #fff;
     position: absolute;
-    top: 15%;
-    right: 8%;
+    top: 158px;
+    right: 20px;
     font-size: 53px;
     font-weight: 700;
     cursor: pointer; }
@@ -381,6 +381,34 @@ table {
     color: #999;
     text-decoration: none;
     cursor: pointer; }
+  .all .x-box {
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 158px;
+    right: 26px;
+    background: blue;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .all .left {
+    z-index: 3;
+    width: 2px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    cursor: pointer;
+    transform: rotate(45deg); }
+  .all .right {
+    z-index: 4;
+    width: 2px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    cursor: pointer;
+    transform: rotate(-45deg); }
   .all .modal-content {
     display: block;
     position: relative;
@@ -410,7 +438,7 @@ table {
     line-height: 23px;
     border-bottom: 2px solid #f8f8f8;
     border-top: 2px solid #f8f8f8;
-    background: red;
+    background: #fff;
     padding: 30px; }
   .all .modal-footer {
     padding: 30px;

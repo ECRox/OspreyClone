@@ -92,8 +92,8 @@
   .close {
     color: #fff;
     position: absolute;
-    top: 15%;
-    right: 8%;
+    top: 158px;
+    right: 20px;
     font-size: 53px;
     font-weight: 700;
     cursor: pointer;
@@ -105,6 +105,44 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  .x-box {
+    z-index: 2;
+    @include dimensions(50px, 50px);
+    position: absolute;
+    top: 158px;
+    right: 26px;
+    background: blue;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+    z-index: 3;
+    width: 2px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    // top: 158px;
+    // right: 20px;
+    cursor: pointer;
+    transform: rotate(45deg);
+  }
+
+  .right {
+    z-index: 4;
+    width: 2px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    // top: 158px;
+    // right: 20px;
+    cursor: pointer;
+    transform: rotate(-45deg);
+  }
+
 
   //CONTENT
   .modal-content {
@@ -142,7 +180,7 @@
     line-height: 23px;
     border-bottom: 2px solid #f8f8f8;
     border-top: 2px solid #f8f8f8;
-    background: red;
+    background: #fff;
     padding: 30px;
   }
 
