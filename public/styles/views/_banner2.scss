@@ -83,37 +83,9 @@
     left: 0;
     top: 0;
     @include dimensions(100%, 100%);
-    // transform: translate(-50%, -50%);
     @include flex(center, center);
-    overflow: auto;
-  }
-
-  // CLOSE X
-  // .close {
-  //   color: #fff;
-  //   position: absolute;
-  //   top: 158px;
-  //   right: 20px;
-  //   font-size: 53px;
-  //   font-weight: 700;
-  //   cursor: pointer;
-  // }
-  //
-  // .close:hover,
-  // .close:focus {
-  //   color: #999;
-  //   text-decoration: none;
-  //   cursor: pointer;
-  // }
-
-  .x-box {
-    // z-index: 2;
-    @include dimensions(50px, 50px);
-    position: absolute;
-    top: 158px;
-    right: 26px;
-    @include flex(center, center);
-    cursor: pointer;
+    flex-direction: column;
+    overflow: hidden;
   }
 
   .left {
@@ -139,14 +111,14 @@
 
   //CONTENT
   .modal-content {
-    display: block;
+    display: inline-block;
     z-index: 4;
     position: relative;
     max-width: 92vw;
-    // margin: 4vh 4vw;
+    margin: 4vh 4vw;
     margin-top: 60px;
     background-color: #fefefe;
-    // margin: auto;
+    margin: auto;
     padding: 0;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -154,11 +126,26 @@
     animation-duration: 0.4s;
   }
 
+  .close-container {
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .x-box {
+    // z-index: 2;
+    @include dimensions(50px, 50px);
+    position: absolute;
+    bottom: 10px;
+    @include flex(center, center);
+    cursor: pointer;
+  }
   //HEADER
   .modal-header {
       padding: 30px;
       background-color: #fff;
-      color: #333;
+      color: #000;
       font-family: $hn;
       font-weight:bold;
       font-size: 18px;
@@ -200,6 +187,8 @@
     border-width: 2px;
     white-space: normal;
     margin: 2px;
+    cursor: none;
+    outline: 0;
   }
 
   .cancel {
@@ -254,6 +243,19 @@
         opacity: 1
       }
   }
+  //********************************** MEDIA QUERIES **********************************//
+  @media (min-width: 768px) {
+    .modal-content {
+      max-width: 600px;
+    }
+
+    .close-container {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
 
 
 }

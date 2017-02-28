@@ -367,17 +367,8 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto; }
-  .all .x-box {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 158px;
-    right: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer; }
+    flex-direction: column;
+    overflow: hidden; }
   .all .left {
     z-index: 3;
     width: 2px;
@@ -395,21 +386,37 @@ table {
     cursor: pointer;
     transform: rotate(-45deg); }
   .all .modal-content {
-    display: block;
+    display: inline-block;
     z-index: 4;
     position: relative;
     max-width: 92vw;
+    margin: 4vh 4vw;
     margin-top: 60px;
     background-color: #fefefe;
+    margin: auto;
     padding: 0;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s; }
+  .all .close-container {
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end; }
+  .all .x-box {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
   .all .modal-header {
     padding: 30px;
     background-color: #fff;
-    color: #333;
+    color: #000;
     font-family: Tahoma, Arial, sans-serif;
     font-weight: bold;
     font-size: 18px;
@@ -447,7 +454,9 @@ table {
     border-radius: 5px;
     border-width: 2px;
     white-space: normal;
-    margin: 2px; }
+    margin: 2px;
+    cursor: none;
+    outline: 0; }
   .all .cancel {
     background-color: #5cb85c;
     color: #fff;
@@ -483,6 +492,13 @@ table {
   to {
     top: 0;
     opacity: 1; } }
+  @media (min-width: 768px) {
+    .all .modal-content {
+      max-width: 600px; }
+    .all .close-container {
+      position: relative;
+      display: flex;
+      justify-content: flex-end; } }
 
 .footer {
   -webkit-font-smoothing: antialiased;
