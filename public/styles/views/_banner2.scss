@@ -15,6 +15,7 @@
   a:hover {
     color: $blue;
   }
+
 //********************************** BLACK HEADER **********************************//
   .black-nav {
     @include dimensions(100%, 42px);
@@ -80,12 +81,10 @@
     position: fixed;
     z-index: 1;
     background-color: rgba(0, 0, 0, .85);
-    left: 0;
-    top: 0;
-    @include dimensions(100%, 100%);
+    top: 0px;
+    @include dimensions(100%, 100vh);
     @include flex(center, center);
     flex-direction: column;
-    overflow: hidden;
   }
 
   .left {
@@ -129,8 +128,11 @@
   .close-container {
     height: 50px;
     position: relative;
-    display: flex;
-    justify-content: flex-end;
+    @include flex(flex-end, center);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
   }
 
   .x-box {
@@ -251,8 +253,7 @@
 
     .close-container {
       position: relative;
-      display: flex;
-      justify-content: flex-end;
+      @include flex(flex-end, center);
     }
   }
 
