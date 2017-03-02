@@ -353,8 +353,11 @@ table {
     color: #0095cf; }
   .all .mobile-logo {
     width: 60px;
-    height: 45.5px;
-    background-color: red; }
+    height: 47px;
+    background-image: url("https://www.backcountryedge.com/media/wysiwyg/layered_nav_images/osprey-logo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
   .all .modal-bg {
     display: none;
     position: fixed;

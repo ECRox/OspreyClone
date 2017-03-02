@@ -70,8 +70,8 @@
   .mobile-logo {
     // @include image('an svg???');
     width: 60px;
-    height: 45.5px;
-    background-color: red;
+    height: 47px;
+    @include image('https://www.backcountryedge.com/media/wysiwyg/layered_nav_images/osprey-logo.jpg');
   }
   //********************************** MODAL **********************************//
   // MODAL
