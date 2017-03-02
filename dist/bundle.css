@@ -350,7 +350,8 @@ table {
   .all .material-icons.md-48 {
     font-size: 39px; }
   .all .icon {
-    color: #0095cf; }
+    color: #0095cf;
+    cursor: pointer; }
   .all .mobile-logo {
     width: 60px;
     height: 47px;

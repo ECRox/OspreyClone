@@ -1,7 +1,3 @@
-<div id="main">
-  <h2>Sidenav Push Example</h2>
-  <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 <section class="all">
   <!-- BLACK HEADER -->
   <header class="black-nav">
@@ -11,9 +7,9 @@
   </header>
   <!-- WHITE HEADER -->
   <header class="white-nav">
-    <div class="icon"><i class="material-icons md-48">menu</i></div>
+    <div class="icon" onclick="openNav()"><i class="material-icons md-48">menu</i></div>
     <div class="mobile-logo"></div>
-    <div class="icon"><i class="material-icons md-48">search</i></div>
+    <div class="icon" style="cursor: none"><i class="material-icons md-48">search</i></div>
   </header>
 
   <!-- MODAL -->
@@ -52,13 +48,6 @@
     <a href="#">Contact</a>
   </div>
 
-
-  </div>
-
-
-
   <script src="./public/js/main/mobile-nav-scripts.js"></script>
 
 </section>
-
-<!-- <i class="material-icons">place</i>  -->
