@@ -1,27 +1,77 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 28px;
+  font-family: $os;
+  line-height: 1em;
+}
+
+h4 {
+  font-family: $hn;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+h6 {
+  font-family: $hn;
+  font-size: 11px;
+  margin: 5px 5px;
+}
+
+.white-color {
+  color: white;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-banner {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  padding: .5em;
+}
+
 .cover-font {
-  font-family: $hnb;
+  font-family: $os;
   color: white;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: .001em;
-  margin-left: .3em;
   margin-top: .3em;
+  margin-bottom: .3em;
 }
 
 .button-text {
   font-family: $os;
   text-transform: uppercase;
   color: white;
-  font-size: 1em;
   display: block;
-  width: 90%;
+  width: 100%;
   margin: .5em auto;
   border-radius: .3em;
-  padding: .5em;
+  padding: .3em;
+}
+
+.button-text-size {
+  font-size: 20px;
+  letter-spacing: 2.5px;
 }
 
 .small-button {
@@ -33,42 +83,21 @@
 }
 
 .white-border-button {
-  border: .2em solid white;
+  border: .15em solid white;
 }
 
 .top-section {
-  background-image: url(http://www.ospreypacks.com/images/heros/Mutant-small.jpg);
-  margin-top: 0px;
+  background-image: url(https://www.ospreypacks.com/images/heros/New-for-Spring-Large.jpg);
+  margin-top: 100px;
 }
 
 .img-position {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100%;
-  width: 100%;
+  // height: 100%;
+  // width: 100%;
   position: relative;
-}
-
-.content-text {
-  background: black;
-  bottom: 0;
-  border-top: white 1px solid;
-  position: absolute;
-  width: 100%;
-}
-
-h4 {
-  font-family: $hn;
-  font-size: 15px;
-  text-transform: uppercase;
-  margin: 5px 5px;
-}
-
-h6 {
-  font-family: $hn;
-  font-size: 11px;
-  margin: 5px 5px;
 }
 
 .blue-border-button {
@@ -80,7 +109,11 @@ h6 {
 }
 
 .third-section {
-  background-image: url(http://www.ospreypacks.com/images/heros/Farpoint_JulyHomepage_small.jpg);
+  background-image: url(https://www.ospreypacks.com/images/article/Cassie-Large.jpg)
+}
+
+.video-banner-color {
+  background-color: #e4002b;
 }
 
 .red-button {
@@ -88,22 +121,15 @@ h6 {
   border: none;
 }
 
-.image-section {
-  background-image: url(http://www.ospreypacks.com/images/article/atmos-aura-content-full-width.jpg);
-  background-repeat: repeat-x;
-  background-position: left top;
-  height: 500px;
+.fourth-section__left-img {
+  background-image: url(https://www.ospreypacks.com/images/article/Women_Full_Width_Large.jpg);
 }
 
-.backpacker-bkgrnd {
-  background-image: url(http://www.ospreypacks.com/images/article/yellow-osprey-full-width-callout-bg-content-960x480.jpg);
-  background-repeat: repeat-x;
-  background-position: left top;
-  height: 500px;
+.fourth-section__right-img {
+  background-color: #E59400;
 }
 
 .bottom-center {
-  position: relative;
   top: 50%;
 }
 
@@ -117,41 +143,62 @@ h6 {
 }
 
 .fifth-section {
-  background-image: url(http://www.ospreypacks.com/images/heros/Packfinder_2-mobile.jpg);
-}
-
-.image-section-1 {
-  background-color: #be4805;
+  background-image: url(https://www.ospreypacks.com/images/heros/Talon-Tempest-Large.jpg);
 }
 
 .opaque-btn {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.image-section-2 {
-  background-image: url(http://www.ospreypacks.com/images/article/Dear-crop.jpg);
+.sixth-section__left-img {
+  background-color: #666666;
+}
+
+.sixth-section__right-img {
+  background-image: url(https://www.ospreypacks.com/images/article/Sven-960.jpg);
 }
 
 .seventh-section {
-  background-image: url(http://www.ospreypacks.com/images/heros/Variant-small-new.jpg);
+  background-image: url(https://www.ospreypacks.com/images/heros/Packfinder_2.jpg);
+}
+
+.carousel-2 {
+  height: 500px;
+  width: 1090px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .trending-title-text {
   font-family: $hn;
-  text-align: center;
-  margin: 1em 0 1em 0;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eighth-section__left-img {
+  background-color: #be4805;
+}
+
+.eighth-section__right-img {
+  background-image: url(https://www.ospreypacks.com/images/article/Dear-crop.jpg);
 }
 
 .ninth-section {
-  background-image: url(http://www.ospreypacks.com/images/heros/Kamber_1920x1080.jpg);
+  background-image: url(https://www.ospreypacks.com/images/heros/Stratos-Sirrus-Large.jpg);
 }
 
 .tenth-section {
-  background-image: url(http://www.ospreypacks.com/images/heros/about-fixed-bg-1920x800.jpg);
+  background-image: url(https://www.ospreypacks.com/images/heros/Duro-Dyna-Large.jpg);
 }
 
 .eleventh-section {
-  background-image: url(http://www.ospreypacks.com/images/heros/KamberABS_1920x1080.jpg);
+  background-image: url(https://www.ospreypacks.com/images/heros/about-fixed-bg-1920x800.jpg);
+}
+
+.twelfth-section {
+  background-image: url(https://www.ospreypacks.com/images/heros/Aether-Ariel-Large.jpg);
 }
 
 .instagram-carousel {
@@ -212,20 +259,95 @@ h6 {
   position: relative;
 }
 
-.CC-633 {
+.volcanic-grey {
+  background-color: #3a3a3a;
+}
+
+.caribbean-blue {
+  background-color: #4b86a8;
+}
+
+.jasper-red {
+  background-color: #902e2d;
+}
+
+.cinnabar-red {
+  background-color: #e6603a;
+}
+
+.graphite-grey {
+  background-color: #0B0F0B;
+}
+
+.absinthe-green {
+  background-color: #6d9b41;
+}
+
+.hoodoo-red {
+  background-color: #a93633;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.nitro-green {
+  background-color: #5e8340;
+}
+
+.cold-blue {
     background-color: #0C4D8A;
 }
 
-.CC-398 {
+.ripcord-red {
     background-color: #B91623;
 }
 
-
-
-@media screen and (min-width: 840px) {
-
+.galactic-black {
+  background-color: #272d2d;
 }
 
-@media screen and (min-width: 1096px) {
+.frost-white {
+  background-color: #cac9c7;
+}
 
+.real-red {
+  background-color: #992029;
+}
+
+.eggplant-purple {
+  background-color: #852a65;
+}
+
+.tahoe-blue {
+  background-color: #292567;
+}
+
+.misty-teal {
+  background-color: #228783;
+}
+
+.ever-green {
+  background-color: #14361b;
+}
+
+.magma-orange {
+  background-color: #dd8546;
+}
+
+@media only screen and (min-width: 840px) {
+  .fourth-section__left-img, .fourth-section__right-img,
+  .sixth-section__left-img,
+  .sixth-section__right-img,
+  .eighth-section__left-img, .eighth-section__right-img
+   {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1096px) {
+  .page {
+    width: 1090px;
+    margin: 0 auto;
+  }
 }
