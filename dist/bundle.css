@@ -420,14 +420,14 @@ table {
     padding: 30px;
     background-color: #fff;
     color: #000;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
     font-weight: bold;
     font-size: 18px;
     text-transform: uppercase;
     text-align: center; }
   .all .modal-body {
     color: #333;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
     font-size: 15px;
     text-align: center;
     line-height: 23px;
@@ -640,7 +640,7 @@ table {
   padding: 0;
   box-sizing: border-box; }
 
-h1 {
+h1, .h1 {
   font-size: 28px;
   font-family: "Oswald", Tahoma, Arial, sans-serif;
   line-height: 1em; }
@@ -657,6 +657,33 @@ h6 {
   font-size: 11px;
   margin: 5px 5px; }
 
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px; }
+
+.material-icons.md-24 {
+  font-size: 24px; }
+
+.material-icons.md-36 {
+  font-size: 36px; }
+
+.material-icons.md-48 {
+  font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54); }
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: white; }
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3); }
+
 .white-color {
   color: white; }
 
@@ -670,6 +697,22 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.brick {
+  padding: 15px 0; }
+
+.brick-banner {
+  padding-bottom: 4px; }
+
+.full-width-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0; }
+
+.brick, .brick.full-width-container {
+  background-color: #fff; }
 
 .container-banner {
   bottom: 0;
@@ -709,9 +752,11 @@ h6 {
 .white-border-button {
   border: .15em solid white; }
 
+.black-border-button {
+  border: .15em solid black; }
+
 .top-section {
-  background-image: url(https://www.ospreypacks.com/images/heros/New-for-Spring-Large.jpg);
-  margin-top: 100px; }
+  background-image: url(https://www.ospreypacks.com/images/heros/New-for-Spring-Large.jpg); }
 
 .img-position {
   background-repeat: no-repeat;
@@ -743,7 +788,8 @@ h6 {
   background-color: #E59400; }
 
 .bottom-center {
-  top: 50%; }
+  top: 50%;
+  padding: .5em; }
 
 .center-align-text {
   text-align: center; }
@@ -801,6 +847,10 @@ h6 {
 .instagram-carousel {
   margin-bottom: 15em;
   background-color: #EAEAEA; }
+
+.instagram-text {
+  top: 0;
+  left: 0; }
 
 .wrapper {
   background: #EFEFEF;

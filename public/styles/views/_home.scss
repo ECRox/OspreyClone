@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-h1 {
+h1, .h1 {
   font-size: 28px;
   font-family: $os;
   line-height: 1em;
@@ -24,6 +24,21 @@ h6 {
   margin: 5px 5px;
 }
 
+//Google icons//
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
 .white-color {
   color: white;
 }
@@ -39,6 +54,26 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.brick {
+  padding: 15px 0;
+}
+
+.brick-banner {
+  padding-bottom: 4px;
+}
+
+.full-width-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.brick, .brick.full-width-container {
+    background-color: #fff;
 }
 
 .container-banner {
@@ -86,9 +121,12 @@ h6 {
   border: .15em solid white;
 }
 
+.black-border-button {
+  border: .15em solid black;
+}
+
 .top-section {
   background-image: url(https://www.ospreypacks.com/images/heros/New-for-Spring-Large.jpg);
-  margin-top: 100px;
 }
 
 .img-position {
@@ -131,6 +169,7 @@ h6 {
 
 .bottom-center {
   top: 50%;
+  padding: .5em;
 }
 
 .center-align-text {
@@ -206,6 +245,10 @@ h6 {
   background-color: #EAEAEA;
 }
 
+.instagram-text {
+  top: 0;
+  left: 0;
+}
 
 //==============================================================================//
 //                          Carousel                                            //
