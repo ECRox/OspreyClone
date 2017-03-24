@@ -86,7 +86,7 @@
     @include flex(center, center);
     flex-direction: column;
   }
-
+////////MAKING X///////////
   .left {
     z-index: 3;
     width: 2px;
@@ -223,6 +223,11 @@
 
   }
 
+  .ham-to-x {
+    @include dimensions(50px, 50px);
+    background-color: red;
+  }
+
   //ANIMATION
   @-webkit-keyframes animatetop {
       from {
@@ -284,6 +289,10 @@
   #main {
       transition: margin-left .5s;
       padding: 16px;
+  }
+
+  #switch-x {
+    
   }
 
   //********************************** MEDIA QUERIES **********************************//

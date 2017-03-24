@@ -5,6 +5,7 @@ angular.module("ospreypack")
   // VARIABLES
   // ============================================================
   $scope.showModal = false;
+  $scope.showX = false;
 
 
 
