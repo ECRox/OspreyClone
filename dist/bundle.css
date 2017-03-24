@@ -505,7 +505,7 @@ table {
     opacity: 1; } }
   .all .sidenav {
     height: 100%;
-    width: 75%;
+    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -572,16 +572,29 @@ table {
   .all .mobile-menu {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+  .all .mobile-menu-flag {
+    padding: 0 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+  .all .flag-group {
+    display: flex; }
   .all .icon-style {
     color: #fff;
-    font-size: 40px;
-    padding: 10px 15px; }
+    font-size: 35px; }
   .all #main {
     transition: margin-left .5s;
     padding: 16px; }
+  .all .flag-container {
+    z-index: 11;
+    width: 30px;
+    height: 15px;
+    background-image: url("http://icons.iconarchive.com/icons/icons-land/vista-flags/256/United-States-Flag-1-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-top: 10px; }
   @media screen and (min-width: 768px) {
     .all .modal-content {
       max-width: 600px; }
