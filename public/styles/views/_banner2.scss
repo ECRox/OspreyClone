@@ -292,20 +292,50 @@
 
   .mobile-search-container {
     width: 100%;
-    color: #0095cf;
+    color: $blue;
     font-size: 19px;
     padding: 15px;
-    border-bottom: 1px solid rgba(255,255,255,.3)
+  }
+
+  input:focus {
+    outline: none;
   }
 
   #mobile-search-input {
+    width: 100%;
     height: 30px;
     border-radius: 20px;
     padding-right: 40px;
     padding: 10px 20px;
     background-color: #fff;
     border: 1px solid #ccc;
+    color: #000;
+    font-size: 15px;
+    font-family: $hn;
   }
+  #mobile-search-input::-webkit-input-placeholder {
+  color: $blue !important;
+  font-size: 15px;
+  font-style: italic;
+}
+
+#mobile-search-input:-moz-placeholder { /* Firefox 18- */
+  color: $blue !important;
+  font-size: 15px;
+  font-style: italic;
+}
+
+#mobile-search-input::-moz-placeholder {  /* Firefox 19+ */
+  color: $blue !important;
+  font-size: 15px;
+  font-style: italic;
+}
+
+#mobile-search-input:-ms-input-placeholder {
+  color: $blue !important;
+  font-size: 15px;
+  font-style: italic;
+}
 
   .mobile-menu {
     @include flex(space-between, center);
