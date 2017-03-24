@@ -230,69 +230,101 @@
 
   //ANIMATION
   @-webkit-keyframes animatetop {
-      from {
-        top: -300px;
-        opacity: 0
-      }
-      to {
-        top: 0;
-        opacity: 1
-      }
+    from {
+      top: -300px;
+      opacity: 0
+    }
+    to {
+      top: 0;
+      opacity: 1
+    }
   }
 
   @keyframes animatetop {
-      from {
-        top: -300px;
-        opacity: 0
-      }
-      to {
-        top: 0;
-        opacity: 1
-      }
+    from {
+      top: -300px;
+      opacity: 0
+    }
+    to {
+      top: 0;
+      opacity: 1
+    }
   }
 
   //*************************** MOBILE SLIDE OUT MENU **********************************//
   .sidenav {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
+    height: 100%;
+    width: 75%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $blue;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
   }
 
   .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-      transition: 0.3s
+    text-decoration: none;
+    font-family: $hnb;
+    font-weight: 600;
+    padding: 10px 15px;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    transition: 0.3s
   }
 
   .sidenav a:hover, .offcanvas a:focus{
-      color: #f1f1f1;
+    color: #f1f1f1;
   }
 
   .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
   }
 
+  .mobile-search-container {
+    width: 100%;
+    color: #0095cf;
+    font-size: 19px;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,.3)
+  }
+
+  #mobile-search-input {
+    height: 30px;
+    border-radius: 20px;
+    padding-right: 40px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+
+  .mobile-menu {
+    @include flex(space-between, center);
+    padding: 0 10px;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+  }
+
+  .icon-style {
+    color: #fff;
+    font-size: 40px;
+    padding: 10px 15px;
+  }
   #main {
       transition: margin-left .5s;
       padding: 16px;
   }
 
   #switch-x {
-    
+
   }
 
   //********************************** MEDIA QUERIES **********************************//
