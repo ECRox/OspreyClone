@@ -698,6 +698,13 @@ h6 {
   justify-content: center;
   align-items: center; }
 
+.img-position {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden; }
+
 .brick {
   padding: 15px 0; }
 
@@ -755,24 +762,17 @@ h6 {
 .black-border-button {
   border: .15em solid black; }
 
-.top-section {
-  background-image: url(https://www.ospreypacks.com/images/heros/New-for-Spring-Large.jpg); }
-
-.img-position {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative; }
+.on-top {
+  position: absolute; }
 
 .blue-border-button {
   border: 1px solid #0095cf;
+  font-family: "Oswald", Tahoma, Arial, sans-serif;
   color: #0095cf;
   border-radius: .3em;
   background-color: transparent;
-  text-transform: uppercase; }
-
-.third-section {
-  background-image: url(https://www.ospreypacks.com/images/article/Cassie-Large.jpg); }
+  text-transform: uppercase;
+  width: 100%; }
 
 .video-banner-color {
   background-color: #e4002b; }
@@ -798,9 +798,6 @@ h6 {
   background-color: black;
   border: none; }
 
-.fifth-section {
-  background-image: url(https://www.ospreypacks.com/images/heros/Talon-Tempest-Large.jpg); }
-
 .opaque-btn {
   background-color: rgba(0, 0, 0, 0.5); }
 
@@ -809,9 +806,6 @@ h6 {
 
 .sixth-section__right-img {
   background-image: url(https://www.ospreypacks.com/images/article/Sven-960.jpg); }
-
-.seventh-section {
-  background-image: url(https://www.ospreypacks.com/images/heros/Packfinder_2.jpg); }
 
 .carousel-2 {
   height: 500px;
@@ -832,18 +826,6 @@ h6 {
 .eighth-section__right-img {
   background-image: url(https://www.ospreypacks.com/images/article/Dear-crop.jpg); }
 
-.ninth-section {
-  background-image: url(https://www.ospreypacks.com/images/heros/Stratos-Sirrus-Large.jpg); }
-
-.tenth-section {
-  background-image: url(https://www.ospreypacks.com/images/heros/Duro-Dyna-Large.jpg); }
-
-.eleventh-section {
-  background-image: url(https://www.ospreypacks.com/images/heros/about-fixed-bg-1920x800.jpg); }
-
-.twelfth-section {
-  background-image: url(https://www.ospreypacks.com/images/heros/Aether-Ariel-Large.jpg); }
-
 .instagram-carousel {
   margin-bottom: 15em;
   background-color: #EAEAEA; }
@@ -853,36 +835,32 @@ h6 {
   left: 0; }
 
 .wrapper {
-  background: #EFEFEF;
-  box-shadow: 1px 1px 10px #999;
-  margin: auto;
   text-align: center;
   position: relative;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  margin-bottom: 20px !important;
   width: 100%;
-  padding-top: 5px; }
+  border: 2px red solid; }
 
 .scrolls {
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 300px;
-  white-space: nowrap; }
+  white-space: nowrap;
+  border: 3px yellow solid; }
 
 .pack-container {
-  box-shadow: 1px 1px 10px #999;
-  margin: 2px;
-  max-height: 50px;
+  margin: 0 12px;
   cursor: pointer;
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  vertical-align: top; }
+  border: 4px green solid; }
+
+.pack-container-img {
+  background-color: #EAEAEA;
+  border: 2px blue solid; }
 
 .pack-img {
-  width: 20%; }
+  width: 50%; }
 
 .color-swatch {
   margin-top: 15px;
