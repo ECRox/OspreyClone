@@ -350,11 +350,15 @@ table {
   .all .material-icons.md-48 {
     font-size: 39px; }
   .all .icon {
-    color: #0095cf; }
+    color: #0095cf;
+    cursor: pointer; }
   .all .mobile-logo {
     width: 60px;
-    height: 45.5px;
-    background-color: red; }
+    height: 47px;
+    background-image: url("https://www.backcountryedge.com/media/wysiwyg/layered_nav_images/osprey-logo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
   .all .modal-bg {
     display: none;
     position: fixed;
@@ -479,6 +483,10 @@ table {
     color: #03b8ff;
     border-color: #03b8ff;
     border-style: solid; }
+  .all .ham-to-x {
+    width: 50px;
+    height: 50px;
+    background-color: red; }
 
 @-webkit-keyframes animatetop {
   from {
@@ -495,7 +503,36 @@ table {
   to {
     top: 0;
     opacity: 1; } }
-  @media (min-width: 768px) {
+  .all .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px; }
+  .all .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s; }
+  .all .sidenav a:hover, .all .offcanvas a:focus {
+    color: #f1f1f1; }
+  .all .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px; }
+  .all #main {
+    transition: margin-left .5s;
+    padding: 16px; }
+  @media screen and (min-width: 768px) {
     .all .modal-content {
       max-width: 600px; }
     .all .close-container {
@@ -503,6 +540,11 @@ table {
       display: flex;
       justify-content: flex-end;
       align-items: center; } }
+  @media screen and (max-height: 450px) {
+    .all .sidenav {
+      padding-top: 15px; }
+    .all .sidenav a {
+      font-size: 18px; } }
 
 .footer {
   -webkit-font-smoothing: antialiased;

@@ -65,13 +65,13 @@
 
   .icon {
     color: $blue;
+    cursor: pointer;
   }
 
   .mobile-logo {
-    // @include image('an svg???');
     width: 60px;
-    height: 45.5px;
-    background-color: red;
+    height: 47px;
+    @include image('https://www.backcountryedge.com/media/wysiwyg/layered_nav_images/osprey-logo.jpg');
   }
   //********************************** MODAL **********************************//
   // MODAL
@@ -86,7 +86,7 @@
     @include flex(center, center);
     flex-direction: column;
   }
-
+////////MAKING X///////////
   .left {
     z-index: 3;
     width: 2px;
@@ -223,6 +223,11 @@
 
   }
 
+  .ham-to-x {
+    @include dimensions(50px, 50px);
+    background-color: red;
+  }
+
   //ANIMATION
   @-webkit-keyframes animatetop {
       from {
@@ -245,8 +250,53 @@
         opacity: 1
       }
   }
+
+  //*************************** MOBILE SLIDE OUT MENU **********************************//
+  .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+  }
+
+  .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s
+  }
+
+  .sidenav a:hover, .offcanvas a:focus{
+      color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+
+  #main {
+      transition: margin-left .5s;
+      padding: 16px;
+  }
+
+  #switch-x {
+    
+  }
+
   //********************************** MEDIA QUERIES **********************************//
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .modal-content {
       max-width: 600px;
     }
@@ -257,6 +307,13 @@
     }
   }
 
-
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
 
 }
