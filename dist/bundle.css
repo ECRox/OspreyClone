@@ -505,20 +505,24 @@ table {
     opacity: 1; } }
   .all .sidenav {
     height: 100%;
-    width: 0;
+    width: 75%;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #0095cf;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px; }
   .all .sidenav a {
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-family: "Helvetica Neue Bold", Helvetica, Tahoma, Arial, sans-serif;
+    font-weight: 600;
+    padding: 10px 15px;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #fff;
+    text-transform: uppercase;
     display: block;
     transition: 0.3s; }
   .all .sidenav a:hover, .all .offcanvas a:focus {
@@ -529,6 +533,52 @@ table {
     right: 25px;
     font-size: 36px;
     margin-left: 50px; }
+  .all .mobile-search-container {
+    width: 100%;
+    color: #0095cf;
+    font-size: 19px;
+    padding: 15px; }
+  .all input:focus {
+    outline: none; }
+  .all #mobile-search-input {
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    padding-right: 40px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #000;
+    font-size: 15px;
+    font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif; }
+  .all #mobile-search-input::-webkit-input-placeholder {
+    color: #0095cf !important;
+    font-size: 15px;
+    font-style: italic; }
+  .all #mobile-search-input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #0095cf !important;
+    font-size: 15px;
+    font-style: italic; }
+  .all #mobile-search-input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #0095cf !important;
+    font-size: 15px;
+    font-style: italic; }
+  .all #mobile-search-input:-ms-input-placeholder {
+    color: #0095cf !important;
+    font-size: 15px;
+    font-style: italic; }
+  .all .mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+  .all .icon-style {
+    color: #fff;
+    font-size: 40px;
+    padding: 10px 15px; }
   .all #main {
     transition: margin-left .5s;
     padding: 16px; }
