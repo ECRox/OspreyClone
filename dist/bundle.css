@@ -533,6 +533,16 @@ table {
     right: 25px;
     font-size: 36px;
     margin-left: 50px; }
+  .all .mobile-search-button {
+    position: absolute;
+    color: #0095cf;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    font-size: 21px;
+    right: 25px;
+    padding-top: 2px;
+    outline: none; }
   .all .mobile-search-container {
     width: 100%;
     color: #0095cf;

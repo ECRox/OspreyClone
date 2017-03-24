@@ -290,6 +290,18 @@
     margin-left: 50px;
   }
 
+  .mobile-search-button {
+    position: absolute;
+    color: $blue;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    font-size: 21px;
+    right: 25px;
+    padding-top: 2px;
+    outline: none;
+  }
+
   .mobile-search-container {
     width: 100%;
     color: $blue;
